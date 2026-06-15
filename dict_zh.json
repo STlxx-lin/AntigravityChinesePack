@@ -1,0 +1,2876 @@
+{
+  "settings": [
+    [
+      "label:\"Agent Auto-Fix Lints\",description:\"When enabled, Agent is given awareness of lint errors created by its edits and may fix them without explicit user prompt",
+      "label:\"Agent 自动修复 Lint\",description:\"启用后，Agent 会自动感知其编辑产生的 lint 错误，并可在无需用户明确提示的情况下修复它们"
+    ],
+    [
+      "label:\"Strict Mode\",description:\"When enabled, enforces settings that prevent the agent from autonomously running targeted exploits and requires human review for all agent actions. Visit antigravity.google/docs/strict-mode for details.",
+      "label:\"严格模式\",description:\"启用后，将强制执行防止 Agent 自动运行目标漏洞利用的设置，并要求人工审查所有 Agent 操作。详见 antigravity.google/docs/strict-mode。"
+    ],
+    [
+      "label:\"Review Policy\",description:",
+      "label:\"审查策略\",description:"
+    ],
+    [
+      "label:\"Terminal Command Auto Execution\",description:",
+      "label:\"终端命令自动执行\",description:"
+    ],
+    [
+      "label:\"Agent Non-Workspace File Access\",description:\"Allow Agent to view and edit files outside of the current workspace automatically. Use with caution: this provides the A",
+      "label:\"Agent 非工作区文件访问\",description:\"允许 Agent 自动查看和编辑当前工作区之外的文件。请谨慎使用：这为 A"
+    ],
+    [
+      "label:\"Enable Sounds for Agent\",description:\"When enabled, Antigravity will play a sound when Agent finishes generating a response.",
+      "label:\"Agent 声音提示\",description:\"启用后，Antigravity 会在 Agent 完成响应生成时播放声音。"
+    ],
+    [
+      "label:\"Auto-Expand Changes Overview\",description:\"When enabled, the Changes Overview toolbar will automatically expand when Agent finishes generating a response.",
+      "label:\"自动展开更改概览\",description:\"启用后，当 Agent 完成响应生成时，更改概览工具栏将自动展开。"
+    ],
+    [
+      "label:\"Conversation History\",description:\"When enabled, the agent will be able to access past conversations to inform its responses.",
+      "label:\"对话历史\",description:\"启用后，Agent 将能够访问过去的对话来辅助其响应。"
+    ],
+    [
+      "label:\"Knowledge\",description:\"When enabled, the agent will be able to access its knowledge base to inform its responses and automatically generate kno",
+      "label:\"知识库\",description:\"启用后，Agent 将能够访问其知识库来辅助其响应并自动生成知"
+    ],
+    [
+      "label:\"Auto-Open Edited Files\",description:\"Open files in the background if Agent creates or edits them\"",
+      "label:\"自动打开已编辑文件\",description:\"当 Agent 创建或编辑文件时在后台打开它们\""
+    ],
+    [
+      "label:\"Open Agent on Reload\",description:\"Open Agent panel on window reload\"",
+      "label:\"重新加载时打开 Agent\",description:\"窗口重新加载时打开 Agent 面板\""
+    ],
+    [
+      "label:\"Enable Terminal Sandbox\",description:",
+      "label:\"启用终端沙盒\",description:"
+    ],
+    [
+      "label:\"Sandbox Allow Network\",description:",
+      "label:\"沙盒允许网络\",description:"
+    ],
+    [
+      "label:\"Suggestions in Editor\",description:\"Show suggestions when typing in the editor\"",
+      "label:\"编辑器中的建议\",description:\"在编辑器中输入时显示建议\""
+    ],
+    [
+      "label:\"Show Selection Actions\",description:",
+      "label:\"显示选中操作\",description:"
+    ],
+    [
+      "label:\"Tab Speed\",description:\"Set the speed of tab suggestions\"",
+      "label:\"Tab 速度\",description:\"设置 Tab 建议的速度\""
+    ],
+    [
+      "label:\"Tab to Jump\",description:\"Predict the location of your next edit and navigates you there with a tab keypress.",
+      "label:\"Tab 跳转\",description:\"预测下一个编辑位置，按 Tab 键即可跳转到该位置。"
+    ],
+    [
+      "label:\"Tab to Import\",description:\"Quickly add and update imports with a tab keypress.",
+      "label:\"Tab 导入\",description:\"按 Tab 键快速添加和更新导入语句。"
+    ],
+    [
+      "label:\"Highlight After Accept\",description:\"Highlight newly inserted text after accepting a Tab completion.",
+      "label:\"接受后高亮\",description:\"接受 Tab 补全后高亮新插入的文本。"
+    ],
+    [
+      "label:\"Tab Gitignore Access\",description:\"Allow Tab to view and edit the files in .gitignore. Use with caution if your .gitignore lists files containing credentia",
+      "label:\"Tab Gitignore 访问\",description:\"允许 Tab 查看和编辑 .gitignore 中的文件。如果 .gitignore 中包含敏感凭据文件请谨慎使用"
+    ],
+    [
+      "label:\"Enable Browser Tools\",description:\"When enabled, Agent can use browser tools to open URLs, read web pages, and interact with browser content. This allows t",
+      "label:\"启用浏览器工具\",description:\"启用后，Agent 可以使用浏览器工具打开 URL、读取网页并与浏览器内容互动。这允许"
+    ],
+    [
+      "label:\"Browser Javascript Execution Policy\",description:",
+      "label:\"浏览器 JavaScript 执行策略\",description:"
+    ],
+    [
+      "label:\"Chrome Binary Path\",description:\"Path to the Chrome/Chromium executable. Leave empty for auto-detection.",
+      "label:\"Chrome 可执行文件路径\",description:\"Chrome/Chromium 可执行文件的路径。留空则自动检测。"
+    ],
+    [
+      "label:\"Browser User Profile Path\",description:\"Custom path for the browser user profile directory. Leave empty for default (~/.gemini/antigravity-browser-profile).",
+      "label:\"浏览器用户配置路径\",description:\"浏览器用户配置文件目录的自定义路径。留空使用默认值（~/.gemini/antigravity-browser-profile）。"
+    ],
+    [
+      "label:\"Browser CDP Port\",description:\"Port number for Chrome DevTools Protocol remote debugging. Leave empty for default (9222).",
+      "label:\"浏览器 CDP 端口\",description:\"Chrome DevTools Protocol 远程调试的端口号。留空使用默认值（9222）。"
+    ],
+    [
+      "label:\"Allow List Terminal Commands\",description:\"Agent auto-executes commands matched by an allow list entry.",
+      "label:\"终端命令允许列表\",description:\"Agent 自动执行与允许列表条目匹配的命令。"
+    ],
+    [
+      "label:\"Deny List Terminal Commands\",description:\"Agent asks for permission before executing commands matched by a deny list entry.",
+      "label:\"终端命令拒绝列表\",description:\"Agent 在执行与拒绝列表条目匹配的命令之前会请求许可。"
+    ],
+    [
+      "label:\"Enable Telemetry\",description:",
+      "label:\"启用遥测\",description:"
+    ],
+    [
+      "{value:e0.TURBO,label:\"Always Proceed\",description:\"Agent never asks for review. This maximizes the autonomy of the Agent, but also has the highest risk of the Agent operat",
+      "{value:e0.TURBO,label:\"始终继续\",description:\"Agent 从不请求审查。这最大化了 Agent 的自主性，但也具有 Agent 最高操作风"
+    ],
+    [
+      "{value:e0.ALWAYS,label:\"Always Ask\",description:\"Agent always asks for review.",
+      "{value:e0.ALWAYS,label:\"始终询问\",description:\"Agent 始终请求审查。"
+    ],
+    [
+      "it===\"turbo\"?\"Always Proceed\":\"Always Ask\"",
+      "it===\"turbo\"?\"始终继续\":\"始终询问\""
+    ],
+    [
+      "label:\"[Dev] GCP Project ID\",description:\"GCP Project ID for enterprise features.\"",
+      "label:\"[开发] GCP 项目 ID\",description:\"企业功能的 GCP 项目 ID。\""
+    ],
+    [
+      "text:\"Provide Feedback\"",
+      "text:\"提供反馈\""
+    ],
+    [
+      "children:\"Accept\"",
+      "children:\"接受\""
+    ],
+    [
+      "children:\"Accept all\"",
+      "children:\"全部接受\""
+    ],
+    [
+      "children:\"Skip\"",
+      "children:\"跳过\""
+    ],
+    [
+      "children:\"Add\"",
+      "children:\"添加\""
+    ],
+    [
+      "children:\"Add Model\"",
+      "children:\"添加模型\""
+    ],
+    [
+      "\"aria-label\":\"Add context\"",
+      "\"aria-label\":\"添加上下文\""
+    ],
+    [
+      "children:\"Add them to allow future interactions\"",
+      "children:\"将它们添加到允许列表以允许未来的交互\""
+    ],
+    [
+      "children:\"Edit\"",
+      "children:\"编辑\""
+    ],
+    [
+      "tooltipText:\"Edit Model\"",
+      "tooltipText:\"编辑模型\""
+    ],
+    [
+      "children:\"Editor Settings\"",
+      "children:\"编辑器设置\""
+    ],
+    [
+      "label:\"New Editor Window\"",
+      "label:\"新建编辑器窗口\""
+    ],
+    [
+      "children:\"Loading...\"",
+      "children:\"加载中...\""
+    ],
+    [
+      "children:\"Loading models...\"",
+      "children:\"正在加载模型...\""
+    ],
+    [
+      "children:\"Loading Browser recording...\"",
+      "children:\"正在加载浏览器录制...\""
+    ],
+    [
+      "children:\"Loading metrics...\"",
+      "children:\"正在加载指标...\""
+    ],
+    [
+      "label:\"Run\"",
+      "label:\"运行\""
+    ],
+    [
+      "label:\"Running\"",
+      "label:\"运行中\""
+    ],
+    [
+      "label:\"Close\"",
+      "label:\"关闭\""
+    ],
+    [
+      "label:\"Close Workspace\"",
+      "label:\"关闭工作区\""
+    ],
+    [
+      "label:\"Delete Conversation\"",
+      "label:\"删除对话\""
+    ],
+    [
+      "label:\"Open Workspace\"",
+      "label:\"打开工作区\""
+    ],
+    [
+      "Iqr=(e=>(e.Account=\"Account\",e.Agent=\"Permissions\",e.Drive=\"Google Drive\",e.Appearance=\"Appearance\",e.Tab=\"Tab\",e.Editor=\"Editor\",e.Browser=\"Browser\",e.Notifications=\"Notifications\",e.ProvideFeedback=\"Provide Feedback\",e.Customization=\"Customizations\",e.Models=\"Models\",e.App=\"App\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"Project General\",e.ProjectFolders=\"Project Folders\",e.ProjectAgent=\"Project Agent\",e.Shortcuts=\"Shortcuts\",e))(Iqr||{})",
+      "Iqr=(e=>(e.Account=\"账户\",e.Agent=\"权限\",e.Drive=\"Google 云端硬盘\",e.Appearance=\"外观\",e.Tab=\"Tab 补全\",e.Editor=\"编辑器\",e.Browser=\"浏览器\",e.Notifications=\"通知\",e.ProvideFeedback=\"提供反馈\",e.Customization=\"自定义\",e.Models=\"模型\",e.App=\"应用\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"项目通用\",e.ProjectFolders=\"项目文件夹\",e.ProjectAgent=\"项目 Agent\",e.Shortcuts=\"快捷键\",e))(Iqr||{})"
+    ],
+    [
+      "p(\"div\",{className:\"px-4\",children:p(\"span\",{className:\"text-xs font-medium text-muted-foreground select-none\",children:\"General\"})})",
+      "p(\"div\",{className:\"px-4\",children:p(\"span\",{className:\"text-xs font-medium text-muted-foreground select-none\",children:\"常规\"})})"
+    ],
+    [
+      "p(\"div\",{className:\"px-4 mt-2\",children:p(\"span\",{className:\"text-xs font-medium text-muted-foreground select-none\",children:\"Workspaces\"})})",
+      "p(\"div\",{className:\"px-4 mt-2\",children:p(\"span\",{className:\"text-xs font-medium text-muted-foreground select-none\",children:\"工作区\"})})"
+    ],
+    [
+      "children:\"Agent security mode\"",
+      "children:\"Agent 安全模式\""
+    ],
+    [
+      "children:[\"Select one of the \",t?\"two\":\"three\",\" options. Agent settings and permissions can be further customized below.\",\" \"",
+      "children:[\"选择以下 \",t?\"两\":\"三\",\" 种选项之一。您可以在下方进一步自定义 Agent 设置和权限。\",\" \""
+    ],
+    [
+      "children:\"Full access\"",
+      "children:\"完全访问\""
+    ],
+    [
+      "children:\"Agents have full access to your machine and external resources.\"",
+      "children:\"Agent 拥有对您的机器和外部资源的完全访问权限。\""
+    ],
+    [
+      "children:\"Sandboxed\"",
+      "children:\"沙盒模式\""
+    ],
+    [
+      "children:\"Agents run in a secure sandbox that restricts access to external resources outside of your trusted folders.\"",
+      "children:\"Agent 在安全沙盒中运行，该沙盒限制访问您信任的文件夹之外的外部资源。\""
+    ],
+    [
+      "children:\"Strict\"",
+      "children:\"严格模式\""
+    ],
+    [
+      "children:\"Terminal commands always require review and the agent cannot access files outside of its given workspaces.\"",
+      "children:\"终端命令始终需要审查，并且 Agent 无法访问其给定工作区之外的文件。\""
+    ],
+    [
+      "description:\"Controls whether terminal commands require your approval before running.\"",
+      "description:\"控制在运行前是否需要您批准终端命令。\""
+    ],
+    [
+      "children:\"Controls whether terminal commands require your approval before running.\"",
+      "children:\"控制在运行前是否需要您批准终端命令。\""
+    ],
+    [
+      "children:\"Agent will always ask to review in strict mode.\"",
+      "children:\"在严格模式下，Agent 将始终请求审查。\""
+    ],
+    [
+      "label:\"Enable Shell Integration\"",
+      "label:\"启用 Shell 集成\""
+    ],
+    [
+      "description:\"When enabled, Agent will use IDE's shell integration to detect and report terminal command execution.\"",
+      "description:\"启用后，Agent 将使用 IDE 的 shell 集成来检测并报告终端命令的执行。\""
+    ],
+    [
+      "description:\"When enabled, Agent will use IDE's shell integration to detect and report terminal command execution. When disabled, the agent will use its own shell. Restart the application for this to take effect.\"",
+      "description:\"启用后，Agent 将使用 IDE 的 shell 集成来检测并报告终端命令的执行。禁用后，Agent 将使用它自己的 shell。重启应用以使此设置生效。\""
+    ],
+    [
+      "value:a===rl.EAGER?\"Always Proceed\":a===rl.PROCEED_IN_SANDBOX?\"Proceed in Sandbox\":\"Require Review\"",
+      "value:a===rl.EAGER?\"始终继续\":a===rl.PROCEED_IN_SANDBOX?\"在沙盒中运行\":\"需要审查\""
+    ],
+    [
+      "label:\"Agent Non-Workspace File Access\"",
+      "label:\"Agent 非工作区文件访问\""
+    ],
+    [
+      "description:\"Allows the agent to access files outside of your current workspace.\"",
+      "description:\"允许 Agent 访问您当前工作区之外的文件。\""
+    ],
+    [
+      "children:\"Agent Non-Workspace File Access\"",
+      "children:\"Agent 非工作区文件访问\""
+    ],
+    [
+      "children:\"Allows the agent to access files outside of your current workspace.\"",
+      "children:\"允许 Agent 访问您当前工作区之外的文件。\""
+    ],
+    [
+      "children:\"Planning\"",
+      "children:\"规划\""
+    ],
+    [
+      "children:\"Automation\"",
+      "children:\"自动化\""
+    ],
+    [
+      "children:\"History\"",
+      "children:\"历史\""
+    ],
+    [
+      "children:\"General\"",
+      "children:\"常规\""
+    ],
+    [
+      "label:\"Explain and Fix in Current Conversation\"",
+      "label:\"在当前对话中解释并修复\""
+    ],
+    [
+      "description:\"When enabled, 'Explain and Fix' actions will continue in the current conversation instead of starting a new one.\"",
+      "description:\"启用后，“解释并修复”操作将在当前对话中继续，而不是启动一个新对话。\""
+    ],
+    [
+      "children:\"File Access\"",
+      "children:\"文件访问\""
+    ],
+    [
+      "children:\"Advanced File Access\"",
+      "children:\"高级文件访问\""
+    ],
+    [
+      "label:\"Read Files\",description:\"Paths the agent can read.\"",
+      "label:\"读取文件\",description:\"Agent 可读取的路径。\""
+    ],
+    [
+      "label:\"Write Files\",description:\"Paths the agent can modify.\"",
+      "label:\"写入文件\",description:\"Agent 可修改的路径。\""
+    ],
+    [
+      "children:\"Advanced Command Access\"",
+      "children:\"高级命令访问\""
+    ],
+    [
+      "action:\"command\",label:\"Terminal Commands\",description:\"Terminal commands the agent can execute.\"",
+      "action:\"command\",label:\"终端命令\",description:\"Agent 可执行的终端命令。\""
+    ],
+    [
+      "action:\"unsandboxed\",label:\"Commands Outside Sandbox\",description:\"Commands the agent can run outside the sandbox.\"",
+      "action:\"unsandboxed\",label:\"沙盒外命令\",description:\"Agent 可在沙盒外运行的命令。\""
+    ],
+    [
+      "label:\"MCP Tools\",description:\"External tools the agent can call via Model Context Protocol.\"",
+      "label:\"MCP 工具\",description:\"Agent 可通过模型上下文协议（Model Context Protocol）调用的外部工具。\""
+    ],
+    [
+      "children:\"Advanced Web Access\"",
+      "children:\"高级网络访问\""
+    ],
+    [
+      "action:\"read_url\",label:\"Read URLs\",description:\"URLs the agent can read or open in the browser.\"",
+      "action:\"read_url\",label:\"读取 URL\",description:\"Agent 可在浏览器中读取或打开的 URL。\""
+    ],
+    [
+      "action:\"execute_url\",label:\"Execute URLs\",description:\"URLs the agent can actuate on using the browser.\"",
+      "action:\"execute_url\",label:\"执行 URL\",description:\"Agent 可使用浏览器操作的 URL。\""
+    ],
+    [
+      "M7i=({children:e,label:t=\"Advanced Settings\"})",
+      "M7i=({children:e,label:t=\"高级设置\"})"
+    ],
+    [
+      "hps=`Specifies Agent's behavior when asking for review on artifacts, which are documents it creates to enable a richer conversation experience.\n",
+      "hps=`指定 Agent 在请求审查产物（Agent 创建的用于提供更丰富对话体验的文档）时的行为。\n"
+    ],
+    [
+      "`Controls whether terminal commands require your approval before running.\n\nNote: A change to this setting will only apply to new messages sent to Agent. In-progress responses will use the previous setting value.`",
+      "`控制终端命令在运行前是否需要您的批准。\n\n注意：对此设置的更改将仅适用于发送给 Agent 的新消息。进行中的响应将使用先前的设置值。`"
+    ],
+    [
+      "resolveOptionToString:t=>{switch(t){case rl.EAGER:return\"Always Proceed\";case rl.OFF:return\"Request Review\";default:return\"Proceed in Sandbox\"}}",
+      "resolveOptionToString:t=>{switch(t){case rl.EAGER:return\"始终继续\";case rl.OFF:return\"请求审查\";default:return\"在沙盒中运行\"}}"
+    ],
+    [
+      "\"Agent never asks for confirmation before executing terminal commands (except those in the Deny list). This provides the Agent with the maximum ability to operate over long periods without intervention, but also has the highest risk of an Agent executing an unsafe terminal command.\"",
+      "\"Agent 在执行终端命令之前从不请求确认（拒绝列表中的命令除外）。这为 Agent 提供了在没有干预的情况下长期运行的最大能力，但也存在 Agent 执行不安全终端命令的最高风险。\""
+    ],
+    [
+      "\"Agent always asks for confirmation before executing terminal commands (except those in the Allow list).\"",
+      "\"Agent 在执行终端命令之前始终请求确认（允许列表中的命令除外）。\""
+    ],
+    [
+      "\"Terminal command automatically proceeds if the command runs inside the sandbox. Otherwise, it requests review.\"",
+      "\"如果终端命令在沙盒中运行，则自动执行该命令。否则，它将请求审查。\""
+    ],
+    [
+      "\" For Unix shells, an allow list entry matches a command if its space-separated tokens form a prefix of the command's tokens. For PowerShell, the entry tokens may match any contiguous subsequence of the command tokens.\"",
+      "\" 对于 Unix shell，如果允许列表条目以空格分隔的标记是命令标记的前缀，则该条目匹配该命令。对于 PowerShell，条目标记可以匹配命令标记的任何连续子序列。\""
+    ],
+    [
+      "displayResolver:it=>it===rl.EAGER?\"Always Proceed\":it===rl.PROCEED_IN_SANDBOX?\"Proceed in Sandbox\":\"Require Review\"",
+      "displayResolver:it=>it===rl.EAGER?\"始终继续\":it===rl.PROCEED_IN_SANDBOX?\"在沙盒中运行\":\"需要审查\""
+    ],
+    [
+      "value:a===rl.EAGER?\"Always Proceed\":a===rl.PROCEED_IN_SANDBOX?\"Proceed in Sandbox\":\"Require Review\"",
+      "value:a===rl.EAGER?\"始终继续\":a===rl.PROCEED_IN_SANDBOX?\"在沙盒中运行\":\"需要审查\""
+    ],
+    [
+      "e===\"turbo\"?\"Always Proceed\":\"Always Ask\"",
+      "e===\"turbo\"?\"始终继续\":\"始终询问\""
+    ],
+    [
+      "displayResolver:it=>it===\"turbo\"?\"Always Proceed\":\"Always Ask\"",
+      "displayResolver:it=>it===\"turbo\"?\"始终继续\":\"始终询问\""
+    ],
+    [
+      "Mr.CASCADE_AUTO_EXECUTION_POLICY:return u===rl.EAGER?\"Always Proceed\":u===rl.OFF?\"Require Review\":\"Proceed in Sandbox\"",
+      "Mr.CASCADE_AUTO_EXECUTION_POLICY:return u===rl.EAGER?\"始终继续\":u===rl.OFF?\"需要审查\":\"在沙盒中运行\""
+    ],
+    [
+      "case vh.DISABLED:return\"Disabled\";case vh.ALWAYS_ASK:return\"Request Review\";case vh.TURBO:return\"Always Proceed\";default:return\"Request Review\"",
+      "case vh.DISABLED:return\"已禁用\";case vh.ALWAYS_ASK:return\"请求审查\";case vh.TURBO:return\"始终继续\";default:return\"请求审查\""
+    ],
+    [
+      "resolveOptionToString:t=>q1t.find(r=>r.value===t)?.label||\"Request Review\"",
+      "resolveOptionToString:t=>q1t.find(r=>r.value===t)?.label||\"请求审查\""
+    ],
+    [
+      "Warning: \"Always Proceed\" is enabled without sandbox protection. This is very dangerous and we do not recommend doing this.",
+      "警告: 开启了 \"始终继续\" 且未启用沙盒保护。这非常危险，我们不建议这样做。"
+    ],
+    [
+      "children:\"Show all\"",
+      "children:\"显示全部\""
+    ],
+    [
+      "children:\"Open Editor\"",
+      "children:\"打开编辑器\""
+    ],
+    [
+      "children:\"Go Back\"",
+      "children:\"返回\""
+    ],
+    [
+      "children:\"What quota or feature is being incorrectly limited\"",
+      "children:\"哪个配额或功能被错误地限制了\""
+    ],
+    [
+      "children:\"Agent Hooks Configuration\"",
+      "children:\"Agent 钩子配置\""
+    ],
+    [
+      "title:\"Stop Subagent\"",
+      "title:\"停止 Subagent\""
+    ],
+    [
+      "children:\"How this feature would help you and other users\"",
+      "children:\"此功能将如何帮助您和其他用户\""
+    ],
+    [
+      "children:\"Loading events...\"",
+      "children:\"正在加载事件...\""
+    ],
+    [
+      "children:\"Failed to move changes\"",
+      "children:\"移动更改失败\""
+    ],
+    [
+      "description:\"Configure allowed and denied URLs for reading.\"",
+      "description:\"配置允许和拒绝读取的 URL。\""
+    ],
+    [
+      "children:\"Cancel the current battle mode session and return to the main conversation without applying any changes.\"",
+      "children:\"取消当前的对战模式会话并返回主对话，不应用任何更改。\""
+    ],
+    [
+      "placeholder:\"Find in page...\"",
+      "placeholder:\"在页面中查找...\""
+    ],
+    [
+      "placeholder:\"Search MCP servers by name\"",
+      "placeholder:\"按名称搜索 MCP 服务器\""
+    ],
+    [
+      "children:\"An error ID that helps the team investigate the error.\"",
+      "children:\"用于帮助团队调查错误的错误 ID。\""
+    ],
+    [
+      "description:\"Configure external tools via Model Context Protocol.\"",
+      "description:\"通过 Model Context Protocol 配置外部工具。\""
+    ],
+    [
+      "placeholder:\"Enter URL pattern...\"",
+      "placeholder:\"输入 URL 模式...\""
+    ],
+    [
+      "placeholder:\"Type to search...\"",
+      "placeholder:\"输入以搜索...\""
+    ],
+    [
+      "children:\"Any error messages\"",
+      "children:\"任何错误消息\""
+    ],
+    [
+      "description:\"Invalid auth token\"",
+      "description:\"无效的授权 Token\""
+    ],
+    [
+      "children:\"Add Folder\"",
+      "children:\"添加文件夹\""
+    ],
+    [
+      "label:\"Close Terminal Tab\"",
+      "label:\"关闭终端标签页\""
+    ],
+    [
+      "tooltip:\"Open in Editor\"",
+      "tooltip:\"在编辑器中打开\""
+    ],
+    [
+      "title:\"File Permissions\"",
+      "title:\"文件权限\""
+    ],
+    [
+      "children:\"Go to Projects\"",
+      "children:\"转到项目\""
+    ],
+    [
+      "label:\"Skills and Customizations\"",
+      "label:\"技能与自定义\""
+    ],
+    [
+      "title:\"Browser Settings\"",
+      "title:\"浏览器设置\""
+    ],
+    [
+      "children:\"to select\"",
+      "children:\"选择\""
+    ],
+    [
+      "children:\"No Plugins Available\"",
+      "children:\"没有可用的插件\""
+    ],
+    [
+      "children:\"Error loading Browser recording\"",
+      "children:\"加载浏览器录制出错\""
+    ],
+    [
+      "description:\"Multiple documents\"",
+      "description:\"多个文档\""
+    ],
+    [
+      "label:\"Getting scripts...\"",
+      "label:\"正在获取脚本...\""
+    ],
+    [
+      "title:\"Actuation Permissions\"",
+      "title:\"执行操作权限\""
+    ],
+    [
+      "children:\"Python Coming Soon\"",
+      "children:\"Python 即将推出\""
+    ],
+    [
+      "children:\"Any error messages seen when trying to log in\"",
+      "children:\"尝试登录时看到的任何错误消息\""
+    ],
+    [
+      "children:\"No tracked components\"",
+      "children:\"无追踪的组件\""
+    ],
+    [
+      "tooltip:\"Convert to Google Doc\"",
+      "tooltip:\"转换为 Google 文档\""
+    ],
+    [
+      "children:\"Configure settings for Best of N mode.\"",
+      "children:\"配置 Best of N 模式的设置。\""
+    ],
+    [
+      "label:\"Keep In Menu Bar\"",
+      "label:\"保留在菜单栏\""
+    ],
+    [
+      "children:\"Enter Google Cloud Project Details\"",
+      "children:\"输入 Google Cloud 项目详情\""
+    ],
+    [
+      "placeholder:\"Enter command (e.g., git, blaze)...\"",
+      "placeholder:\"输入命令 (例如 git, blaze)...\""
+    ],
+    [
+      "label:\"Enable AI Credit Overages\"",
+      "label:\"启用 AI 信用额度超额\""
+    ],
+    [
+      "children:\"Transpiling React app...\"",
+      "children:\"正在转译 React 应用...\""
+    ],
+    [
+      "children:\"Dev Mode\"",
+      "children:\"开发模式\""
+    ],
+    [
+      "title:\"Last page\"",
+      "title:\"最后一页\""
+    ],
+    [
+      "label:\"Use theme to be imported with settings\"",
+      "label:\"在设置中导入主题\""
+    ],
+    [
+      "title:\"Enable Notifications\"",
+      "title:\"启用通知\""
+    ],
+    [
+      "children:\"Screenshot must be under 10 MB\"",
+      "children:\"截图必须小于 10 MB\""
+    ],
+    [
+      "children:\"View MCP settings\"",
+      "children:\"查看 MCP 设置\""
+    ],
+    [
+      "description:\"Post-onboarding completed steps\"",
+      "description:\"新手引导完成后完成的步骤\""
+    ],
+    [
+      "label:\"File Writes\"",
+      "label:\"文件写入\""
+    ],
+    [
+      "children:\"Loading logs...\"",
+      "children:\"正在加载日志...\""
+    ],
+    [
+      "children:\"No generator metadata available\"",
+      "children:\"没有可用的生成器元数据\""
+    ],
+    [
+      "children:\"Sign in with a different account\"",
+      "children:\"使用其他账号登录\""
+    ],
+    [
+      "children:\"This skill is installed in your workspace\"",
+      "children:\"此技能已在您的工作区安装\""
+    ],
+    [
+      "children:\"Open Editor Settings\"",
+      "children:\"打开编辑器设置\""
+    ],
+    [
+      "description:`When toggled on, ${s} will use your AI credits to fulfill model requests once you're out of model quota. ${s} will always use your model quota first before using AI credits.`",
+      "description:`开启后，当您的模型配额用尽时，${s} 将使用您的 AI 信用额度来处理模型请求。${s} 始终会优先使用您的模型配额，然后再使用 AI 信用额度。`"
+    ],
+    [
+      "children:\"Enter the required configuration values to install this MCP server.\"",
+      "children:\"输入安装此 MCP 服务器所需的配置值。\""
+    ],
+    [
+      "label:\"Ask Agent for Help\"",
+      "label:\"请求 Agent 帮助\""
+    ],
+    [
+      "label:\"Reset Zoom\"",
+      "label:\"重置缩放\""
+    ],
+    [
+      "title:\"Project Settings\"",
+      "title:\"项目设置\""
+    ],
+    [
+      "children:\"This workspace no longer exists. You cannot send messages.\"",
+      "children:\"此工作区已不存在。您无法发送消息。\""
+    ],
+    [
+      "children:\"No log outputs for this task\"",
+      "children:\"此任务无日志输出\""
+    ],
+    [
+      "children:\"Not Found\"",
+      "children:\"未找到\""
+    ],
+    [
+      "children:\"What functionality you expect your account tier to have available that is missing\"",
+      "children:\"您期望您的账户级别拥有哪些目前缺失的功能\""
+    ],
+    [
+      "label:\"Restart Main Language Server\"",
+      "label:\"重启主语言服务器\""
+    ],
+    [
+      "children:\"Google Drive Access\"",
+      "children:\"Google 云端硬盘访问权限\""
+    ],
+    [
+      "children:\"Match case (Aa)\"",
+      "children:\"匹配大小写 (Aa)\""
+    ],
+    [
+      "label:\"See Plans\"",
+      "label:\"查看方案\""
+    ],
+    [
+      "children:\"Cancel task\"",
+      "children:\"取消任务\""
+    ],
+    [
+      "label:\"Scheduled Tasks\"",
+      "label:\"计划任务\""
+    ],
+    [
+      "title:\"Previous page\"",
+      "title:\"上一页\""
+    ],
+    [
+      "children:\"MCP Servers Disabled\"",
+      "children:\"MCP 服务器已禁用\""
+    ],
+    [
+      "description:`When toggled on, ${r.product.nameShort} collects usage data to help Google enhance performance and features.`",
+      "description:`开启后，${r.product.nameShort} 会收集使用数据以帮助 Google 提升性能和功能。`"
+    ],
+    [
+      "title:\"Background Tasks\"",
+      "title:\"后台任务\""
+    ],
+    [
+      "description:\"When enabled, Agent can interact with Google Workspace through the API to search and read documents.\"",
+      "description:\"启用后，Agent 可以通过 API 与 Google Workspace 互动以搜索和读取文档。\""
+    ],
+    [
+      "label:\"Purchase Credits\"",
+      "label:\"购买额度\""
+    ],
+    [
+      "children:\"Multi-select\"",
+      "children:\"多选\""
+    ],
+    [
+      "label:\"Enable Sandbox Mode (Preview)\"",
+      "label:\"启用沙盒模式 (预览)\""
+    ],
+    [
+      "title:\"Layout Controls\"",
+      "title:\"布局控制\""
+    ],
+    [
+      "placeholder:\"Search conversations...\"",
+      "placeholder:\"搜索对话...\""
+    ],
+    [
+      "label:\"Outside of folders file access policy\"",
+      "label:\"文件夹外的文件访问策略\""
+    ],
+    [
+      "tooltip:\"Copy Path\"",
+      "tooltip:\"复制路径\""
+    ],
+    [
+      "description:\"Window height\"",
+      "description:\"窗口高度\""
+    ],
+    [
+      "children:\"View documentation\"",
+      "children:\"查看文档\""
+    ],
+    [
+      "children:\"Model Label\"",
+      "children:\"模型标签\""
+    ],
+    [
+      "label:\"Mark as Unread\"",
+      "label:\"标记为未读\""
+    ],
+    [
+      "children:\"Task Logs\"",
+      "children:\"任务日志\""
+    ],
+    [
+      "description:\"User status information\"",
+      "description:\"用户状态信息\""
+    ],
+    [
+      "children:\"Copy path\"",
+      "children:\"复制路径\""
+    ],
+    [
+      "tooltip:\"Open in Notebook View\"",
+      "tooltip:\"在 Notebook 视图中打开\""
+    ],
+    [
+      "description:\"Allow/deny agent write access to specific files or directories.\"",
+      "description:\"允许/拒绝 Agent 对特定文件或目录的写入访问。\""
+    ],
+    [
+      "description:\"If enabled, you can manage your conversations from the Antigravity website. Please reload the application to apply this setting.\"",
+      "description:\"启用后，您可以从 Antigravity 网站管理您的对话。请重新加载应用程序以应用此设置。\""
+    ],
+    [
+      "children:\"Scheduled Tasks\"",
+      "children:\"计划任务\""
+    ],
+    [
+      "description:\"Prevent the computer from sleeping while the app is running.\"",
+      "description:\"在应用运行时防止电脑进入睡眠状态。\""
+    ],
+    [
+      "placeholder:\"New hook name\"",
+      "placeholder:\"新钩子名称\""
+    ],
+    [
+      "children:\"Max Tokens\"",
+      "children:\"最大 Token 数\""
+    ],
+    [
+      "children:\"Quick Start\"",
+      "children:\"快速开始\""
+    ],
+    [
+      "children:\"This project uses Firebase. Do you want to download the Firebase skill?\"",
+      "children:\"此项目使用了 Firebase。您想下载 Firebase 技能吗？\""
+    ],
+    [
+      "children:\"Loading custom agents...\"",
+      "children:\"正在加载自定义 Agent...\""
+    ],
+    [
+      "description:\"Allow/deny agent read access to specific URLs or domains.\"",
+      "description:\"允许/拒绝 Agent 对特定 URL 或域名的读取访问。\""
+    ],
+    [
+      "children:\"Delete Project\"",
+      "children:\"删除项目\""
+    ],
+    [
+      "label:\"Open Conversation History\"",
+      "label:\"打开对话历史\""
+    ],
+    [
+      "children:\"Add Scheduled Task\"",
+      "children:\"添加计划任务\""
+    ],
+    [
+      "title:\"Import AI Studio Project\"",
+      "title:\"导入 AI Studio 项目\""
+    ],
+    [
+      "title:\"Update Available\"",
+      "title:\"有可用更新\""
+    ],
+    [
+      "children:\"Loading plugins...\"",
+      "children:\"正在加载插件...\""
+    ],
+    [
+      "children:\"Default Branch\"",
+      "children:\"默认分支\""
+    ],
+    [
+      "children:\"Terms of Service\"",
+      "children:\"服务条款\""
+    ],
+    [
+      "children:\"Trajectory Debug View\"",
+      "children:\"轨迹调试视图\""
+    ],
+    [
+      "label:\"File Picker\"",
+      "label:\"文件选择器\""
+    ],
+    [
+      "placeholder:\"Paste auth code\"",
+      "placeholder:\"粘贴授权码\""
+    ],
+    [
+      "label:\"Open Workspace Selector\"",
+      "label:\"打开工作区选择器\""
+    ],
+    [
+      "children:\"Add Handler\"",
+      "children:\"添加处理器\""
+    ],
+    [
+      "title:\"Files Changed\"",
+      "title:\"已修改的文件\""
+    ],
+    [
+      "label:\"Toggle Terminal\"",
+      "label:\"切换终端\""
+    ],
+    [
+      "children:\"No message prompts available\"",
+      "children:\"没有可用的消息提示\""
+    ],
+    [
+      "children:\"Trajectory Stats\"",
+      "children:\"轨迹统计\""
+    ],
+    [
+      "children:\"Build With Google Plugins\"",
+      "children:\"使用 Google 插件构建\""
+    ],
+    [
+      "label:\"Delete Project\"",
+      "label:\"删除项目\""
+    ],
+    [
+      "label:\"Go Back\"",
+      "label:\"返回\""
+    ],
+    [
+      "children:\"Actual behavior\"",
+      "children:\"实际行为\""
+    ],
+    [
+      "tooltipText:\"Scheduled Tasks\"",
+      "tooltipText:\"计划任务\""
+    ],
+    [
+      "children:\"Cancel step\"",
+      "children:\"取消步骤\""
+    ],
+    [
+      "title:\"Build With Google Plugins\"",
+      "title:\"使用 Google 插件构建\""
+    ],
+    [
+      "children:\"Copy Path\"",
+      "children:\"复制路径\""
+    ],
+    [
+      "label:\"Build With Google Plugins\"",
+      "label:\"使用 Google 插件构建\""
+    ],
+    [
+      "tooltip:\"Trajectory Debug View\"",
+      "tooltip:\"轨迹调试视图\""
+    ],
+    [
+      "children:\"Any relevant information\"",
+      "children:\"任何相关信息\""
+    ],
+    [
+      "children:\"Cannot send message to subagent.\"",
+      "children:\"无法向 subagent 发送消息。\""
+    ],
+    [
+      "children:\"Back to Scheduled Tasks\"",
+      "children:\"返回计划任务\""
+    ],
+    [
+      "{id:\"createSplitTerminal\",label:\"Split Terminal\",icon:\"splitscreen\",keybindings:{binding:{mod:!0,key:\"\\\\\"}}}",
+      "{id:\"createSplitTerminal\",label:\"拆分终端\",icon:\"splitscreen\",keybindings:{binding:{mod:!0,key:\"\\\\\"}}}"
+    ],
+    [
+      "{isProviderSetting:!0,screen:\"Editor\",label:\"Confirm Window Reload\",description:'Toggle if a confirmation is shown when using the \"Reload Window\" button.',settingType:\"switch\"}",
+      "{isProviderSetting:!0,screen:\"Editor\",label:\"确认窗口重新加载\",description:\"控制在使用“重新加载窗口”按钮时是否显示确认提示。\",settingType:\"switch\"}"
+    ],
+    [
+      "{isProviderSetting:!0,screen:\"Permissions\",label:\"Enable Demo Mode (Beta)\",description:'When enabled, your UI will be slightly modified to ensure more consistent demos. This is only recommended for demo purposes. In most cases, you can run \"Antigravity: Start Demo Mode\" and \"Antigravity: Stop Demo Mode\" to control this switch and update your ~/.gemini/antigravity data directory.',settingType:\"switch\"}",
+      "{isProviderSetting:!0,screen:\"Permissions\",label:\"启用演示模式 (测试版)\",description:\"启用后，您的 UI 将会稍作修改以确保演示的一致性。这仅建议在演示时使用。在大多数情况下，您可以运行“Antigravity: Start Demo Mode”和“Antigravity: Stop Demo Mode”命令来控制此开关并更新您的 ~/.gemini/antigravity 数据目录。\",settingType:\"switch\"}"
+    ],
+    [
+      "{isProviderSetting:!0,screen:\"Permissions\",label:\"Agent Host Address\",description:`When running commands, the agent will try to use this address, and fall back to to the \"connector.host.featureDefault\" host if not defined.\n\nNote: hosts set here with auto-run enabled will have internet access restricted soon.`,settingType:\"text\",type:\"string\"}",
+      "{isProviderSetting:!0,screen:\"Permissions\",label:\"Agent 主机地址\",description:\"运行命令时，Agent 将尝试使用此地址，如果未定义，将回退到“connector.host.featureDefault”主机。\\n\\n注意：此处设置且启用了自动运行的主机，其互联网访问权限很快将会受到限制。\",settingType:\"text\",type:\"string\"}"
+    ],
+    [
+      "{isProviderSetting:!0,screen:\"Appearance\",label:\"Verbose agent chat\",description:\"Display and preserve intermediate thinking steps\",settingType:\"switch\"}",
+      "{isProviderSetting:!0,screen:\"Appearance\",label:\"Agent 详细聊天\",description:\"显示并保留中间思考步骤\",settingType:\"switch\"}"
+    ],
+    [
+      "{isProviderSetting:!0,screen:\"Customizations\",label:\"Include Jetski Default Customizations\",description:\"When enabled, the agent will include default customizations, including default skills.\",settingType:\"switch\"}",
+      "{isProviderSetting:!0,screen:\"Customizations\",label:\"包含 Jetski 默认自定义配置\",description:\"启用后，Agent 将包含默认的自定义配置，包括默认技能。\",settingType:\"switch\"}"
+    ],
+    [
+      "{environment:Ad.LOCAL,label:\"Local\",description:\"Run in your current workspace\",icon:\"computer\"}",
+      "{environment:Ad.LOCAL,label:\"本地\",description:\"在您当前的工作区中运行\",icon:\"computer\"}"
+    ],
+    [
+      "{environment:Ad.BACKGROUND_WORKTREE,label:\"Worktree\",description:\"Run in a new worktree\",icon:\"fork_right\"}",
+      "{environment:Ad.BACKGROUND_WORKTREE,label:\"工作树\",description:\"在新工作树中运行\",icon:\"fork_right\"}"
+    ],
+    [
+      "{environment:Ad.BACKGROUND_CITC_WORKSPACE_CLONE,label:\"CitC Clone\",description:\"Clone current workspace into a new independent workspace\",icon:\"cloud\"}",
+      "{environment:Ad.BACKGROUND_CITC_WORKSPACE_CLONE,label:\"CitC 克隆\",description:\"将当前工作区克隆到一个新的独立工作区中\",icon:\"cloud\"}"
+    ],
+    [
+      "{label:\"Toggle Fullscreen\",onClick:()=>{a.toggleManagerWindowFullscreen()}}",
+      "{label:\"切换全屏\",onClick:()=>{a.toggleManagerWindowFullscreen()}}"
+    ],
+    [
+      "{label:\"Marketing Emails\",description:`Receive product updates, tips, and promotions from Google ${r.product.nameShort} via email.`,userSettings:u}",
+      "{label:\"营销邮件\",description:\"通过电子邮件接收来自 Google ${r.product.nameShort} 的产品更新、提示和促销信息。\",userSettings:u}"
+    ],
+    [
+      "{label:\"Email\",description:a?\"Peter Pan\":n.email,rightElement:p(lo,{onClick:async()=>{await t.logout(),g(),e({to:co.onboarding,replace:!0,search:{login:!0}})},children:\"Sign Out\"})}",
+      "{label:\"电子邮件\",description:a?\"Peter Pan\":n.email,rightElement:p(lo,{onClick:async()=>{await t.logout(),g(),e({to:co.onboarding,replace:!0,search:{login:!0}})},children:\"退出登录\"})}"
+    ],
+    [
+      "{label:\"Not Signed In\",description:`Sign in to use ${Z7i.name}!`,rightElement:p(Eo,{onClick:()=>t.showLoginFlow(),children:\"Sign In\"})}",
+      "{label:\"未登录\",description:\"登录以使用 ${Z7i.name}！\",rightElement:p(Eo,{onClick:()=>t.showLoginFlow(),children:\"登录\"})}"
+    ],
+    [
+      "{action:\"read_file\",label:\"File Reads\",description:\"Allow/deny agent read access to specific files or directories.\",grants:s,onChangeGrants:o,placeholder:\"e.g., /path/to/file\",borderless:!0}",
+      "{action:\"read_file\",label:\"文件读取\",description:\"允许/拒绝 Agent 对特定文件或目录的读取访问权限。\",grants:s,onChangeGrants:o,placeholder:\"例如：/path/to/file\",borderless:!0}"
+    ],
+    [
+      "{action:\"command\",label:\"Terminal Commands\",description:\"Allow/deny specific terminal commands.\",grants:s,onChangeGrants:o,placeholder:\"e.g., npm test\",borderless:!0}",
+      "{action:\"command\",label:\"终端命令\",description:\"允许/拒绝特定的终端命令。\",grants:s,onChangeGrants:o,placeholder:\"例如：npm test\",borderless:!0}"
+    ],
+    [
+      "{action:\"unsandboxed\",label:\"Commands Outside Sandbox\",description:\"Allow/deny agent command execution outside the sandbox.\",grants:s,onChangeGrants:o,placeholder:\"e.g., curl\",borderless:!0}",
+      "{action:\"unsandboxed\",label:\"沙盒外命令\",description:\"允许/拒绝 Agent 在沙盒外执行命令。\",grants:s,onChangeGrants:o,placeholder:\"例如：curl\",borderless:!0}"
+    ],
+    [
+      "{label:\"File Access Rules\",badge:Y>0?Y:void 0,description:\"Configure allowed and denied paths for file reads and writes.\",rightElement:p(lo,{onClick:()=>{re(\"file\")},children:\"Open\"})}",
+      "{label:\"文件访问规则\",badge:Y>0?Y:void 0,description:\"配置允许和拒绝的文件读写路径。\",rightElement:p(lo,{onClick:()=>{re(\"file\")},children:\"打开\"})}"
+    ],
+    [
+      "{label:\"Terminal Commands\",badge:P>0?P:void 0,description:\"Configure allowed terminal commands.\",rightElement:p(lo,{onClick:()=>{re(\"command\")},children:\"Open\"})}",
+      "{label:\"终端命令\",badge:P>0?P:void 0,description:\"配置允许的终端命令。\",rightElement:p(lo,{onClick:()=>{re(\"command\")},children:\"打开\"})}"
+    ],
+    [
+      "{label:\"Commands Outside Sandbox\",badge:W>0?W:void 0,description:\"Configure allowed commands outside the sandbox.\",rightElement:p(lo,{onClick:()=>{re(\"unsandboxed\")},children:\"Open\"})}",
+      "{label:\"沙盒外命令\",badge:W>0?W:void 0,description:\"配置沙盒外允许的命令。\",rightElement:p(lo,{onClick:()=>{re(\"unsandboxed\")},children:\"打开\"})}"
+    ],
+    [
+      "{label:\"Security Preset\",description:De,value:Se===\"custom\"?\"Custom\":One[ge][Se]?.displayName??\"Custom\",options:[...ie.presets,\"custom\"],displayResolver:it=>it===\"custom\"?\"Custom\":One[ge][it]?.displayName??\"Custom\",resolveOptionToDescription:it=>it===\"custom\"?\"Manually customize individual settings.\":One[ge][it]?.shortDescription,onSelect:it=>{Ye(it),Ue(it)},wide:!0}",
+      "{label:\"安全预设\",description:De,value:Se===\"custom\"?\"自定义\":One[ge][Se]?.displayName??\"自定义\",options:[...ie.presets,\"custom\"],displayResolver:it=>it===\"custom\"?\"自定义\":One[ge][it]?.displayName??\"自定义\",resolveOptionToDescription:it=>it===\"custom\"?\"手动自定义各个设置。\":One[ge][it]?.shortDescription,onSelect:it=>{Ye(it),Ue(it)},wide:!0}"
+    ],
+    [
+      "{settingKey:Mr.DISABLE_EAGER_CLONING,label:\"Disable Eager Cloning\",description:\"Disable pre-warming of workspace clones.\"}",
+      "{settingKey:Mr.DISABLE_EAGER_CLONING,label:\"禁用预先克隆\",description:\"禁用工作区克隆的预热。\"}"
+    ],
+    [
+      "{settingKey:Mr.MAX_CLONED_WORKSPACES,label:\"Maximum Active Workspaces\",description:\"Maximum number of concurrent active source workspaces tracked in the clone pools.\",type:\"number\",min:1}",
+      "{settingKey:Mr.MAX_CLONED_WORKSPACES,label:\"最大活动工作区数\",description:\"在克隆池中追踪的最大并发活动源工作区数。\",type:\"number\",min:1}"
+    ],
+    [
+      "{settingKey:Mr.MAX_CLONES_PER_WORKSPACE,label:\"Maximum Clones Per Workspace\",description:\"Maximum number of pre-warmed workspace clones cached per active source workspace.\",type:\"number\",min:1,max:8}",
+      "{settingKey:Mr.MAX_CLONES_PER_WORKSPACE,label:\"每个工作区的最大克隆数\",description:\"每个活动源工作区缓存的最大预热工作区克隆数。\",type:\"number\",min:1,max:8}"
+    ],
+    [
+      "{action:\"execute_url\",label:\"Execute URLs\",description:\"Allow/deny agent browser actuation access to specific URLs.\",grants:r,onChangeGrants:f=>{t.setPrefValue(Mr.PERMISSION_GRANTS_GLOBAL,f)},placeholder:\"e.g., https://example.com\",borderless:!0}",
+      "{action:\"execute_url\",label:\"执行 URL\",description:\"允许/拒绝 Agent 浏览器对特定 URL 的操作访问权限。\",grants:r,onChangeGrants:f=>{t.setPrefValue(Mr.PERMISSION_GRANTS_GLOBAL,f)},placeholder:\"例如：https://example.com\",borderless:!0}"
+    ],
+    [
+      "{value:\"*\",label:\"All tools (*)\",description:\"Hook will trigger if any tool is executed.\"}",
+      "{value:\"*\",label:\"所有工具 (*)\",description:\"执行任何工具时都将触发钩子。\"}"
+    ],
+    [
+      "{value:\"run_command\",label:\"run_command\",description:\"Hook will only trigger if the tool name matches run_command.\"}",
+      "{value:\"run_command\",label:\"run_command\",description:\"仅当工具名称匹配 run_command 时才会触发钩子。\"}"
+    ],
+    [
+      "{value:\"run_command|view_file\",label:\"run_command or view_file\",description:\"Hook will only trigger if the tool name matches run_command or view_file.\"}",
+      "{value:\"run_command|view_file\",label:\"run_command 或 view_file\",description:\"仅当工具名称匹配 run_command 或 view_file 时才会触发钩子。\"}"
+    ],
+    [
+      "{value:\"browser_.*\",label:\"Browser tools (browser_.*)\",description:\"Hook will only trigger if the tool name starts with browser_.\"}",
+      "{value:\"browser_.*\",label:\"浏览器工具 (browser_.*)\",description:\"仅当工具名称以 browser_ 开头时才会触发钩子。\"}"
+    ],
+    [
+      "{settingKey:Mr.INCLUDE_JETSKI_DEFAULT_CUSTOMIZATIONS,label:\"Include Jetski Default Customizations\",description:\"When enabled, the agent will include default customizations, including default skills.\"}",
+      "{settingKey:Mr.INCLUDE_JETSKI_DEFAULT_CUSTOMIZATIONS,label:\"包含 Jetski 默认自定义配置\",description:\"启用后，Agent 将包含默认的自定义配置，包括默认技能。\"}"
+    ],
+    [
+      "{label:\"Manage Hooks\",description:\"Configure agent hooks\",rightElement:p(lo,{onClick:()=>{j(\"hooks\")},children:\"Customize\"})}",
+      "{label:\"管理钩子\",description:\"配置 Agent 钩子\",rightElement:p(lo,{onClick:()=>{j(\"hooks\")},children:\"自定义\"})}"
+    ],
+    [
+      "{label:\"Skill Custom Paths\",description:F,currentList:ee,onDidChangeList:fe,placeholder:\"Enter directory path...\"}",
+      "{label:\"技能自定义路径\",description:F,currentList:ee,onDidChangeList:fe,placeholder:\"输入目录路径...\"}"
+    ],
+    [
+      "{label:\"Create Documents\",description:\"Gives the agent permission to create and upload documents to google drive\",checked:g.canCreate,onCheckedChange:C}",
+      "{label:\"创建文档\",description:\"赋予 Agent 创建并上传文档到 Google 云端硬盘的权限\",checked:g.canCreate,onCheckedChange:C}"
+    ],
+    [
+      "{label:\"Search\",description:\"Gives the agent permission to search through google drive. The agent will only see file titles, not file contents\",checked:g.canSearch,onCheckedChange:N}",
+      "{label:\"搜索\",description:\"赋予 Agent 在 Google 云端硬盘中进行搜索的权限。Agent 只能看到文件标题，无法看到文件内容\",checked:g.canSearch,onCheckedChange:N}"
+    ],
+    [
+      "{label:\"Marketplace Item URL\",description:`Changes the base URL on each extension page. You must restart ${t.nameShort} to use the new marketplace after changing this value.`,configurationKey:\"antigravity.marketplaceGalleryItemURL\",placeholder:\"https://open-vsx.org/vscode/item\"}",
+      "{label:\"插件市场商品 URL\",description:\"更改每个扩展页面的基础 URL。更改此值后，您必须重启 ${t.nameShort} 才能使用新的插件市场。\",configurationKey:\"antigravity.marketplaceGalleryItemURL\",placeholder:\"https://open-vsx.org/vscode/item\"}"
+    ],
+    [
+      "{label:\"Marketplace Gallery URL\",description:`Changes the base URL for marketplace search results. You must restart ${t.nameShort} to use the new marketplace after changing this value.`,configurationKey:\"antigravity.marketplaceExtensionGalleryServiceURL\",placeholder:\"https://open-vsx.org/vscode/gallery\"}",
+      "{label:\"插件市场搜索 URL\",description:\"更改插件市场搜索结果的基础 URL。更改此值后，您必须重启 ${t.nameShort} 才能使用新的插件市场。\",configurationKey:\"antigravity.marketplaceExtensionGalleryServiceURL\",placeholder:\"https://open-vsx.org/vscode/gallery\"}"
+    ],
+    [
+      "{action:\"read_file\",label:\"Read Files\",description:\"Paths the agent can read inside this workspace.\",grants:V,onChangeGrants:x,placeholder:\"Enter file or directory path...\",borderless:!0}",
+      "{action:\"read_file\",label:\"Read Files\",description:\"Agent 在此工作区内可读取的路径。\",grants:V,onChangeGrants:x,placeholder:\"输入文件或目录路径...\",borderless:!0}"
+    ],
+    [
+      "{action:\"write_file\",label:\"Write Files\",description:\"Paths the agent can modify inside this workspace.\",grants:V,onChangeGrants:x,placeholder:\"Enter file or directory path...\",borderless:!0}",
+      "{action:\"write_file\",label:\"Write Files\",description:\"Agent 在此工作区内可修改的路径。\",grants:V,onChangeGrants:x,placeholder:\"输入文件或目录路径...\",borderless:!0}"
+    ],
+    [
+      "{action:\"unsandboxed\",label:\"Commands Outside Sandbox\",description:\"Commands the agent can run outside the sandbox in this workspace.\",grants:V,onChangeGrants:x,placeholder:\"e.g., curl\",borderless:!0}",
+      "{action:\"unsandboxed\",label:\"沙盒外命令\",description:\"Agent 在此工作区内可在沙盒外运行的命令。\",grants:V,onChangeGrants:x,placeholder:\"例如：curl\",borderless:!0}"
+    ],
+    [
+      "{value:\"safe_merge\",label:\"Safe Merge\",description:\"Checks for pending changes before merging.\",enumValue:wte?.SAFE_MERGE??2}",
+      "{value:\"safe_merge\",label:\"安全合并\",description:\"合并前检查是否存在未决更改。\",enumValue:wte?.SAFE_MERGE??2}"
+    ],
+    [
+      "{value:\"overwrite\",label:\"Overwrite\",description:\"Overwrites changes in the target workspace.\",enumValue:wte?.OVERWRITE??1}",
+      "{value:\"overwrite\",label:\"覆盖\",description:\"覆盖目标工作区中的更改。\",enumValue:wte?.OVERWRITE??1}"
+    ],
+    [
+      "KB=({text:e,onClick:t,isActive:r,className:n})=>p(\"button\",{type:\"button\",\"data-testid\":`settings-nav-item-${e}`,className:Mt(\"flex items-center gap-1.5 group mx-2 px-2 py-1 rounded-lg cursor-pointer border-none text-left transition-all outline-none\",r?\"bg-sidebar-secondary\":\"hover:bg-sidebar-muted\",n),onClick:t,children:p(\"span\",{className:Mt(\"text-sm transition-colors select-none truncate flex-1\",r?\"text-foreground\":\"text-secondary-foreground group-hover:text-foreground\"),children:e})})",
+      "KB=({text:e,onClick:t,isActive:r,className:n})=>{const mapping={\"Account\":\"账户\",\"Permissions\":\"权限\",\"Appearance\":\"外观\",\"Notifications\":\"通知\",\"Models\":\"模型\",\"Customizations\":\"自定义\",\"Browser\":\"浏览器\",\"Tab\":\"Tab 补全\",\"Editor\":\"编辑器\",\"App\":\"应用\",\"Best of N\":\"Best of N\",\"Shortcuts\":\"快捷键\",\"Provide Feedback\":\"提供反馈\"};return p(\"button\",{type:\"button\",\"data-testid\":`settings-nav-item-${e}`,className:Mt(\"flex items-center gap-1.5 group mx-2 px-2 py-1 rounded-lg cursor-pointer border-none text-left transition-all outline-none\",r?\"bg-sidebar-secondary\":\"hover:bg-sidebar-muted\",n),onClick:t,children:p(\"span\",{className:Mt(\"text-sm transition-colors select-none truncate flex-1\",r?\"text-foreground\":\"text-secondary-foreground group-hover:text-foreground\"),children:mapping[e]||e})})}"
+    ],
+    [
+      "title:\"Account\",description:\"Manage your plan, credentials, and general preferences.\"",
+      "title:\"账户\",description:\"管理您的方案、凭据和常规偏好设置。\""
+    ],
+    [
+      "title:\"Appearance\",description:\"Configure the agent's visual theme and display preferences.\"",
+      "title:\"外观\",description:\"配置 Agent 的视觉主题和显示偏好。\""
+    ],
+    [
+      "title:\"Models\",description:\"Configure AI models and view your quota.\"",
+      "title:\"模型\",description:\"配置 AI 模型并查看您的配额。\""
+    ],
+    [
+      "title:\"Notifications\",description:\"Manage your notification preferences.\"",
+      "title:\"通知\",description:\"管理您的通知偏好设置。\""
+    ],
+    [
+      "{title:\"Chat Settings\"",
+      "{title:\"聊天设置\""
+    ],
+    [
+      "{title:\"Terminal Commands\"",
+      "{title:\"终端命令\""
+    ],
+    [
+      "{title:\"Suggestions\"",
+      "{title:\"建议\""
+    ],
+    [
+      "{title:\"Navigation\"",
+      "{title:\"导航\""
+    ],
+    [
+      "{title:\"Context\"",
+      "{title:\"上下文\""
+    ],
+    [
+      "{title:\"General\"",
+      "{title:\"常规\""
+    ],
+    [
+      "{title:\"Advanced\"",
+      "{title:\"高级\""
+    ],
+    [
+      "{title:\"Quota\"",
+      "{title:\"配额\""
+    ],
+    [
+      "{title:\"Default Customizations\"",
+      "{title:\"默认自定义\""
+    ],
+    [
+      "{title:\"Customize Global Skills\"",
+      "{title:\"自定义全局技能\""
+    ],
+    [
+      "{title:\"Custom Agents\"",
+      "{title:\"自定义 Agent\""
+    ],
+    [
+      "{title:\"MCP Servers\"",
+      "{title:\"MCP 服务器\""
+    ],
+    [
+      "children:\"Notification Settings\"",
+      "children:\"通知设置\""
+    ],
+    [
+      "children:\"To modify notification settings, open your operating system's system preferences.\"",
+      "children:\"要修改通知设置，请打开您操作系统的系统偏好设置。\""
+    ],
+    [
+      "children:\"Open System Preferences\"",
+      "children:\"打开系统偏好设置\""
+    ],
+    [
+      "title:\"Model Credits\"",
+      "title:\"AI 信用额度\""
+    ],
+    [
+      "title:\"Model Quota\"",
+      "title:\"模型配额\""
+    ],
+    [
+      "children:C!==void 0?\"View your available model quota and AI credits. Model quota refreshes periodically based on your plan. Enable AI Credit Overages to continue using models when your quota is exhausted.\":\"View your available model quota. Quota refreshes periodically based on your plan.\"",
+      "children:C!==void 0?\"查看您可用的模型配额和 AI 信用额度。模型配额会根据您的方案定期刷新。启用 AI 信用额度超额以在配额用尽时继续使用模型。\":\"查看您可用的模型配额。配额会根据您的方案定期刷新。\""
+    ],
+    [
+      "title:\"Customizations\"",
+      "title:\"自定义配置\""
+    ],
+    [
+      "\"Configure default behaviors, skills, and MCP servers.\"",
+      "\"配置默认行为、技能和 MCP 服务器。\""
+    ],
+    [
+      "title:\"Token Usage\"",
+      "title:\"Token 使用量\""
+    ],
+    [
+      "\"The breakdown below shows token usage from customizations like skills, rules, and MCP. If the budget is exceeded, large customizations will be truncated automatically.\"",
+      "\"以下细分显示了来自技能、规则和 MCP 等自定义项的 Token 使用量。如果超出预算，大型自定义项将被自动截断。\""
+    ],
+    [
+      "\"% of the customization budget is available.\"",
+      "\"% 的自定义预算额度可用。\""
+    ],
+    [
+      "title:\"Rules\"",
+      "title:\"规则\""
+    ],
+    [
+      "label:\"Rules\"",
+      "label:\"规则\""
+    ],
+    [
+      "getRenderInfo(){return{label:\"Rules\"",
+      "getRenderInfo(){return{label:\"规则\""
+    ],
+    [
+      "title:\"Installed MCP Servers\"",
+      "title:\"已安装的 MCP 服务器\""
+    ],
+    [
+      "\"Configure the browser subagent. It requires\"",
+      "\"配置浏览器 Subagent。这需要安装 \""
+    ],
+    [
+      "\"to be installed.\"",
+      "\" 才能正常使用。\""
+    ],
+    [
+      "label:\"Browser Actuation Rules\"",
+      "label:\"浏览器执行规则\""
+    ],
+    [
+      "description:\"Configure allowed and denied URLs for browser actuation.\"",
+      "description:\"配置浏览器执行操作允许和拒绝的 URL。\""
+    ],
+    [
+      "title:\"Editor Settings\"",
+      "title:\"编辑器设置\""
+    ],
+    [
+      "description:\"Configure editor-specific behaviors and shortcuts.\"",
+      "description:\"配置编辑器特定的行为和快捷键。\""
+    ],
+    [
+      "title:\"Selection Actions\"",
+      "title:\"选择操作\""
+    ],
+    [
+      "description:'Show \"Edit\" and \"Chat\" buttons when selecting text in the editor.'",
+      "description:'在编辑器中选择文本时显示“编辑”和“对话”按钮。'"
+    ],
+    [
+      "children:\"To modify editor settings, open Settings within the editor window.\"",
+      "children:\"要修改编辑器设置，请在编辑器窗口中打开设置。\""
+    ]
+  ],
+  "chat": [
+    [
+      "label:\"Mentions\"",
+      "label:\"提及\""
+    ],
+    [
+      "label:\"Screen Recording\"",
+      "label:\"屏幕录制\""
+    ],
+    [
+      "children:\"Delete Conversation\"",
+      "children:\"删除对话\""
+    ],
+    [
+      "children:\"Cancel\"",
+      "children:\"取消\""
+    ],
+    [
+      "children:\"Confirm Undo\"",
+      "children:\"确认撤销\""
+    ],
+    [
+      "children:\"Close\"",
+      "children:\"关闭\""
+    ],
+    [
+      "children:\"Create\"",
+      "children:\"创建\""
+    ],
+    [
+      "children:\"Delete\"",
+      "children:\"删除\""
+    ],
+    [
+      "children:\"Dismiss\"",
+      "children:\"忽略\""
+    ],
+    [
+      "children:\"Expand\"",
+      "children:\"展开\""
+    ],
+    [
+      "children:\"Install\"",
+      "children:\"安装\""
+    ],
+    [
+      "children:\"Launch\"",
+      "children:\"启动\""
+    ],
+    [
+      "children:\"Open\"",
+      "children:\"打开\""
+    ],
+    [
+      "Exit code ${e.exitCode}",
+      "\\u9000\\u51FA\\u7801 ${e.exitCode}"
+    ],
+    [
+      "Ran command",
+      "执行命令"
+    ],
+    [
+      "children:\"Preview\"",
+      "children:\"预览\""
+    ],
+    [
+      "children:\"Refresh\"",
+      "children:\"刷新\""
+    ],
+    [
+      "children:\"Retry\"",
+      "children:\"重试\""
+    ],
+    [
+      "children:\"Review\"",
+      "children:\"审查\""
+    ],
+    [
+      "children:\"Review Changes\"",
+      "children:\"审查更改\""
+    ],
+    [
+      "children:\"Save\"",
+      "children:\"保存\""
+    ],
+    [
+      "children:\"Send Feedback\"",
+      "children:\"发送反馈\""
+    ],
+    [
+      "children:\"Configure\"",
+      "children:\"配置\""
+    ],
+    [
+      "children:\"Next\"",
+      "children:\"下一步\""
+    ],
+    [
+      "children:\"Previous\"",
+      "children:\"上一步\""
+    ],
+    [
+      "children:\"Setup\"",
+      "children:\"设置\""
+    ],
+    [
+      "children:\"New\"",
+      "children:\"新建\""
+    ],
+    [
+      "children:\"Custom\"",
+      "children:\"自定义\""
+    ],
+    [
+      "children:\"Open allowlist\"",
+      "children:\"打开允许列表\""
+    ],
+    [
+      "children:\"View Diff\"",
+      "children:\"查看差异\""
+    ],
+    [
+      "children:\"View Page\"",
+      "children:\"查看页面\""
+    ],
+    [
+      "children:\"View network request\"",
+      "children:\"查看网络请求\""
+    ],
+    [
+      "children:\"View network requests\"",
+      "children:\"查看网络请求\""
+    ],
+    [
+      "children:\"View plans\"",
+      "children:\"查看计划\""
+    ],
+    [
+      "children:\"Thinking\"",
+      "children:\"思考中\""
+    ],
+    [
+      "children:\"Installed\"",
+      "children:\"已安装\""
+    ],
+    [
+      "children:\"An error was thrown.\"",
+      "children:\"发生了一个错误。\""
+    ],
+    [
+      "children:\"Launching the browser...\"",
+      "children:\"正在启动浏览器...\""
+    ],
+    [
+      "children:\"Playback available\"",
+      "children:\"可以回放\""
+    ],
+    [
+      "children:\"Preview unavailable\"",
+      "children:\"预览不可用\""
+    ],
+    [
+      "children:\"No matching results\"",
+      "children:\"没有匹配的结果\""
+    ],
+    [
+      "children:\"No browser pages open\"",
+      "children:\"没有打开的浏览器页面\""
+    ],
+    [
+      "children:\"Read URL rejected\"",
+      "children:\"读取 URL 被拒绝\""
+    ],
+    [
+      "content:\"Unknown edit\"",
+      "content:\"未知编辑\""
+    ],
+    [
+      "content:\"Unknown file edit\"",
+      "content:\"未知文件编辑\""
+    ],
+    [
+      "children:\"Antigravity would like to use the browser.\"",
+      "children:\"Antigravity 希望使用浏览器。\""
+    ],
+    [
+      "children:\"The Agent attempted to interact with some sites that are not allowlisted\"",
+      "children:\"Agent 尝试与一些不在允许列表中的网站交互\""
+    ],
+    [
+      "children:\"The agent was prevented from accessing some sites\"",
+      "children:\"Agent 已被阻止访问某些网站\""
+    ],
+    [
+      "children:\"The agent will wait for you to install the browser extension.\"",
+      "children:\"Agent 将等待你安装浏览器扩展。\""
+    ],
+    [
+      "children:\"Read URL content?\"",
+      "children:\"Read URL content?\""
+    ],
+    [
+      "children:\"Sources\"",
+      "children:\"来源\""
+    ],
+    [
+      "children:\"Details\"",
+      "children:\"详细信息\""
+    ],
+    [
+      "children:\"Features\"",
+      "children:\"功能\""
+    ],
+    [
+      "children:\"Comments\"",
+      "children:\"评论\""
+    ],
+    [
+      "children:\"Images\"",
+      "children:\"图片\""
+    ],
+    [
+      "children:\"Suggested Actions\"",
+      "children:\"建议操作\""
+    ],
+    [
+      "children:\"Recent actions\"",
+      "children:\"最近操作\""
+    ],
+    [
+      "children:\"Feedback\"",
+      "children:\"反馈\""
+    ],
+    [
+      "children:\"Denied Sites\"",
+      "children:\"被拒绝的网站\""
+    ],
+    [
+      "children:\"Good response\"",
+      "children:\"好的响应\""
+    ],
+    [
+      "children:\"Bad response\"",
+      "children:\"差的响应\""
+    ],
+    [
+      "children:\"Open System Browser\"",
+      "children:\"打开系统浏览器\""
+    ],
+    [
+      "children:\"Fetched network request for page.\"",
+      "children:\"已获取页面的网络请求。\""
+    ],
+    [
+      "children:\"Fetched network requests for page.\"",
+      "children:\"已获取页面的网络请求。\""
+    ],
+    [
+      "label:\"Complete verification\"",
+      "label:\"完成验证\""
+    ],
+    [
+      "label:\"Copy\"",
+      "label:\"复制\""
+    ],
+    [
+      "label:\"Paste\"",
+      "label:\"粘贴\""
+    ],
+    [
+      "label:\"Enable\"",
+      "label:\"启用\""
+    ],
+    [
+      "label:\"Retry\"",
+      "label:\"重试\""
+    ],
+    [
+      "label:\"Deny\"",
+      "label:\"拒绝\""
+    ],
+    [
+      "label:\"Allow Once\"",
+      "label:\"允许一次\""
+    ],
+    [
+      "label:\"Always Allow\"",
+      "label:\"始终允许\""
+    ],
+    [
+      "label:\"Always run\"",
+      "label:\"始终运行\""
+    ],
+    [
+      "label:\"Ask every time\"",
+      "label:\"每次询问\""
+    ],
+    [
+      "label:\"Ask first\"",
+      "label:\"先询问\""
+    ],
+    [
+      "label:\"Always Proceed\"",
+      "label:\"始终继续\""
+    ],
+    [
+      "label:\"Copy debug info\"",
+      "label:\"复制调试信息\""
+    ],
+    [
+      "label:\"Select Model\"",
+      "label:\"选择模型\""
+    ],
+    [
+      "label:\"Select another model\"",
+      "label:\"选择其他模型\""
+    ],
+    [
+      "label:\"Terminal\"",
+      "label:\"终端\""
+    ],
+    [
+      "label:\"Media\"",
+      "label:\"媒体\""
+    ],
+    [
+      "label:\"Errors\"",
+      "label:\"错误\""
+    ],
+    [
+      "label:\"Conversation\"",
+      "label:\"对话\""
+    ],
+    [
+      "title:\"Verification required\"",
+      "title:\"需要验证\""
+    ],
+    [
+      "title:\"Select Model to Send Message\"",
+      "title:\"选择模型以发送消息\""
+    ],
+    [
+      "title:\"Model quota reached\"",
+      "title:\"模型配额已满\""
+    ],
+    [
+      "title:\"Capture screenshot\"",
+      "title:\"截取屏幕\""
+    ],
+    [
+      "title:\"Capture console logs\"",
+      "title:\"捕获控制台日志\""
+    ],
+    [
+      "title:\"View Page\"",
+      "title:\"查看页面\""
+    ],
+    [
+      "title:\"Mention Page\"",
+      "title:\"提及页面\""
+    ],
+    [
+      "title:\"Full Error\"",
+      "title:\"完整错误\""
+    ],
+    [
+      "title:\"Copy full URL to clipboard\"",
+      "title:\"复制完整 URL 到剪贴板\""
+    ],
+    [
+      "title:\"Click to copy full command\"",
+      "title:\"点击复制完整命令\""
+    ],
+    [
+      "title:\"Copy trajectory ID\"",
+      "title:\"复制轨迹 ID\""
+    ],
+    [
+      "children:\"Deny\"",
+      "children:\"拒绝\""
+    ],
+    [
+      "children:\"Reject all\"",
+      "children:\"全部拒绝\""
+    ],
+    [
+      "children:\"Learn more\"",
+      "children:\"了解更多\""
+    ],
+    [
+      "children:\"troubleshooting guide\"",
+      "children:\"故障排除指南\""
+    ],
+    [
+      "children:s?`See all (${t.length})`:\"See less\"",
+      "children:s?`查看全部 (${t.length})`:\"收起\""
+    ],
+    [
+      "children:p?\"See less\":`See all (${t})`",
+      "children:p?\"收起\":`查看全部 (${t})`"
+    ],
+    [
+      "children:t?`See all (${e.length})`:\"See less\"",
+      "children:t?`查看全部 (${e.length})`:\"收起\""
+    ],
+    [
+      "for ${Math.max(1,Number(t.seconds))}s`:\"Thought Process\"",
+      "for ${Math.max(1,Number(t.seconds))}s`:\"思考过程\""
+    ],
+    [
+      "title:i?\"New Workspace\":\"New Worktree\"",
+      "title:i?\"新工作区\":\"新工作树\""
+    ],
+    [
+      "r.some(n=>n.type===2)?\"New Workspace\":\"New Worktree\"",
+      "r.some(n=>n.type===2)?\"新工作区\":\"新工作树\""
+    ],
+    [
+      "content:\"Archive Conversation\"",
+      "content:\"归档对话\""
+    ],
+    [
+      "content:ae?\"Unpin Conversation\":\"Pin Conversation\"",
+      "content:ae?\"取消置顶\":\"置顶对话\""
+    ],
+    [
+      "\"Ask anything, @ to mention\"",
+      "\"输入任何内容，@ 用于提及\""
+    ],
+    [
+      "\", / for actions\"",
+      "\"，/ 用于调用操作\""
+    ],
+    [
+      "tooltip:()=>`Changes Overview (${f})`",
+      "tooltip:()=>`更改概览 (${f})`"
+    ],
+    [
+      "n=`Artifacts (${r.length} Files for Conversation)`",
+      "n=`产物 (${r.length} 个对话文件)`"
+    ],
+    [
+      "\"Expand All\"",
+      "\"全部展开\""
+    ],
+    [
+      "\"Collapse All\"",
+      "\"全部折叠\""
+    ],
+    [
+      "children:\"Artifacts are files the agent creates during a conversation to help perform longer running tasks and allow the user to provide high-level feedback. Click to open in editor.\"",
+      "children:\"产物是 Agent 在对话中创建的文件，用于帮助执行较长时间运行的任务并允许用户提供高级反馈。点击在编辑器中打开。\""
+    ],
+    [
+      "children:\"Artifact Name\"",
+      "children:\"产物名称\""
+    ],
+    [
+      "children:\"Last Updated\"",
+      "children:\"最后更新\""
+    ],
+    [
+      "children:\"New Workspace\"",
+      "children:\"新工作区\""
+    ],
+    [
+      "children:\"New Fig Workspace\"",
+      "children:\"新 Fig 工作区\""
+    ],
+    [
+      "label:\"New Conversation\"",
+      "label:\"新对话\""
+    ],
+    [
+      "children:\"New Conversation\"",
+      "children:\"新对话\""
+    ],
+    [
+      "label:\"Rename\"",
+      "label:\"重命名\""
+    ],
+    [
+      "uma=(e=>(e.Account=\"Account\",e.Agent=\"Permissions\",e.Drive=\"Google Drive\",e.Appearance=\"Appearance\",e.Tab=\"Tab\",e.Editor=\"Editor\",e.Browser=\"Browser\",e.Notifications=\"Notifications\",e.ProvideFeedback=\"Provide Feedback\",e.Customization=\"Customizations\",e.Models=\"Models\",e.App=\"App\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"Project General\",e.ProjectFolders=\"Project Folders\",e.ProjectAgent=\"Project Agent\",e.Shortcuts=\"Shortcuts\",e))(uma||{})",
+      "uma=(e=>(e.Account=\"账户\",e.Agent=\"权限\",e.Drive=\"Google 云端硬盘\",e.Appearance=\"外观\",e.Tab=\"Tab 补全\",e.Editor=\"编辑器\",e.Browser=\"浏览器\",e.Notifications=\"通知\",e.ProvideFeedback=\"提供反馈\",e.Customization=\"自定义\",e.Models=\"模型\",e.App=\"应用\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"项目通用\",e.ProjectFolders=\"项目文件夹\",e.ProjectAgent=\"项目 Agent\",e.Shortcuts=\"快捷键\",e))(uma||{})"
+    ],
+    [
+      "{title:\"MCP Servers\",settings:[LG.MCP]}",
+      "{title:\"MCP 服务器\",settings:[LG.MCP]}"
+    ],
+    [
+      "{title:\"Custom Agents\",settings:[LG.CUSTOM_AGENTS]}",
+      "{title:\"自定义 Agent\",settings:[LG.CUSTOM_AGENTS]}"
+    ],
+    [
+      "h_s=`Specifies Agent's behavior when asking for review on artifacts, which are documents it creates to enable a richer conversation experience.\n",
+      "h_s=`指定 Agent 在请求审查产物（Agent 创建的用于提供更丰富对话体验的文档）时的行为。\n"
+    ],
+    [
+      "`Controls whether terminal commands require your approval before running.\n\nNote: A change to this setting will only apply to new messages sent to Agent. In-progress responses will use the previous setting value.`",
+      "`控制终端命令在运行前是否需要您的批准。\n\n注意：对此设置的更改将仅适用于发送给 Agent 的新消息。进行中的响应将使用先前的设置值。`"
+    ],
+    [
+      "resolveOptionToString:t=>{switch(t){case n0.EAGER:return\"Always Proceed\";case n0.OFF:return\"Request Review\";default:return\"Proceed in Sandbox\"}}",
+      "resolveOptionToString:t=>{switch(t){case n0.EAGER:return\"始终继续\";case n0.OFF:return\"请求审查\";default:return\"在沙盒中运行\"}}"
+    ],
+    [
+      "\"Agent never asks for confirmation before executing terminal commands (except those in the Deny list). This provides the Agent with the maximum ability to operate over long periods without intervention, but also has the highest risk of an Agent executing an unsafe terminal command.\"",
+      "\"Agent 在执行终端命令之前从不请求确认（拒绝列表中的命令除外）。这为 Agent 提供了在没有干预的情况下长期运行的最大能力，但也存在 Agent 执行不安全终端命令的最高风险。\""
+    ],
+    [
+      "\"Agent always asks for confirmation before executing terminal commands (except those in the Allow list).\"",
+      "\"Agent 在执行终端命令之前始终请求确认（允许列表中的命令除外）。\""
+    ],
+    [
+      "\"Terminal command automatically proceeds if the command runs inside the sandbox. Otherwise, it requests review.\"",
+      "\"如果终端命令在沙盒中运行，则自动执行该命令。否则，它将请求审查。\""
+    ],
+    [
+      "\" For Unix shells, an allow list entry matches a command if its space-separated tokens form a prefix of the command's tokens. For PowerShell, the entry tokens may match any contiguous subsequence of the command tokens.\"",
+      "\" 对于 Unix shell，如果允许列表条目以空格分隔的标记是命令标记的前缀，则该条目匹配该命令。对于 PowerShell，条目标记可以匹配命令标记的任何连续子序列。\""
+    ],
+    [
+      "case Wf.DISABLED:return\"Disabled\";case Wf.ALWAYS_ASK:return\"Request Review\";case Wf.TURBO:return\"Always Proceed\";default:return\"Request Review\"",
+      "case Wf.DISABLED:return\"已禁用\";case Wf.ALWAYS_ASK:return\"请求审查\";case Wf.TURBO:return\"始终继续\";default:return\"请求审查\""
+    ],
+    [
+      "resolveOptionToString:t=>E8e.find(r=>r.value===t)?.label||\"Request Review\"",
+      "resolveOptionToString:t=>E8e.find(r=>r.value===t)?.label||\"请求审查\""
+    ],
+    [
+      "children:\"to select\"",
+      "children:\"选择\""
+    ],
+    [
+      "title:\"Stop Subagent\"",
+      "title:\"停止 Subagent\""
+    ],
+    [
+      "children:\"Failed to move changes\"",
+      "children:\"移动更改失败\""
+    ],
+    [
+      "children:\"Enter Google Cloud Project Details\"",
+      "children:\"输入 Google Cloud 项目详情\""
+    ],
+    [
+      "children:\"Loading events...\"",
+      "children:\"正在加载事件...\""
+    ],
+    [
+      "description:\"Invalid auth token\"",
+      "description:\"无效的授权 Token\""
+    ],
+    [
+      "children:\"Max Tokens\"",
+      "children:\"最大 Token 数\""
+    ],
+    [
+      "description:\"Multiple documents\"",
+      "description:\"多个文档\""
+    ],
+    [
+      "label:\"Getting scripts...\"",
+      "label:\"正在获取脚本...\""
+    ],
+    [
+      "children:\"Error loading Browser recording\"",
+      "children:\"加载浏览器录制出错\""
+    ],
+    [
+      "label:\"Keep In Menu Bar\"",
+      "label:\"保留在菜单栏\""
+    ],
+    [
+      "title:\"Files Changed\"",
+      "title:\"已修改的文件\""
+    ],
+    [
+      "children:\"Not Found\"",
+      "children:\"未找到\""
+    ],
+    [
+      "children:\"What functionality you expect your account tier to have available that is missing\"",
+      "children:\"您期望您的账户级别拥有哪些目前缺失的功能\""
+    ],
+    [
+      "label:\"Ask Agent for Help\"",
+      "label:\"请求 Agent 帮助\""
+    ],
+    [
+      "label:\"Restart Main Language Server\"",
+      "label:\"重启主语言服务器\""
+    ],
+    [
+      "children:\"Scheduled Tasks\"",
+      "children:\"计划任务\""
+    ],
+    [
+      "description:\"If enabled, you can manage your conversations from the Antigravity website. Please reload the application to apply this setting.\"",
+      "description:\"启用后，您可以从 Antigravity 网站管理您的对话。请重新加载应用程序以应用此设置。\""
+    ],
+    [
+      "children:\"Match case (Aa)\"",
+      "children:\"匹配大小写 (Aa)\""
+    ],
+    [
+      "children:\"Terms of Service\"",
+      "children:\"服务条款\""
+    ],
+    [
+      "children:\"This skill is installed in your workspace\"",
+      "children:\"此技能已在您的工作区安装\""
+    ],
+    [
+      "label:\"Open Workspace Selector\"",
+      "label:\"打开工作区选择器\""
+    ],
+    [
+      "label:\"Purchase Credits\"",
+      "label:\"购买额度\""
+    ],
+    [
+      "children:\"Any relevant information\"",
+      "children:\"任何相关信息\""
+    ],
+    [
+      "title:\"Layout Controls\"",
+      "title:\"布局控制\""
+    ],
+    [
+      "label:\"See Plans\"",
+      "label:\"查看方案\""
+    ],
+    [
+      "children:\"Any error messages\"",
+      "children:\"任何错误消息\""
+    ],
+    [
+      "children:\"No log outputs for this task\"",
+      "children:\"此任务无日志输出\""
+    ],
+    [
+      "children:\"Quick Start\"",
+      "children:\"快速开始\""
+    ],
+    [
+      "title:\"Project Settings\"",
+      "title:\"项目设置\""
+    ],
+    [
+      "children:\"Default Branch\"",
+      "children:\"默认分支\""
+    ],
+    [
+      "label:\"Open Conversation History\"",
+      "label:\"打开对话历史\""
+    ],
+    [
+      "title:\"Update Available\"",
+      "title:\"有可用更新\""
+    ],
+    [
+      "children:\"Copy Path\"",
+      "children:\"复制路径\""
+    ],
+    [
+      "children:\"Trajectory Stats\"",
+      "children:\"轨迹统计\""
+    ],
+    [
+      "children:\"Cannot send message to subagent.\"",
+      "children:\"无法向 subagent 发送消息。\""
+    ],
+    [
+      "label:\"Close Terminal Tab\"",
+      "label:\"关闭终端标签页\""
+    ],
+    [
+      "tooltip:\"Open in Notebook View\"",
+      "tooltip:\"在 Notebook 视图中打开\""
+    ],
+    [
+      "children:\"Google Drive Access\"",
+      "children:\"Google 云端硬盘访问权限\""
+    ],
+    [
+      "children:\"How this feature would help you and other users\"",
+      "children:\"此功能将如何帮助您和其他用户\""
+    ],
+    [
+      "children:\"This workspace no longer exists. You cannot send messages.\"",
+      "children:\"此工作区已不存在。您无法发送消息。\""
+    ],
+    [
+      "label:\"Mark as Unread\"",
+      "label:\"标记为未读\""
+    ],
+    [
+      "children:\"Cancel task\"",
+      "children:\"取消任务\""
+    ],
+    [
+      "tooltip:\"Open in Editor\"",
+      "tooltip:\"在编辑器中打开\""
+    ],
+    [
+      "children:\"Actual behavior\"",
+      "children:\"实际行为\""
+    ],
+    [
+      "children:\"Loading plugins...\"",
+      "children:\"正在加载插件...\""
+    ],
+    [
+      "children:\"Add Folder\"",
+      "children:\"添加文件夹\""
+    ],
+    [
+      "children:\"Cancel step\"",
+      "children:\"取消步骤\""
+    ],
+    [
+      "title:\"Background Tasks\"",
+      "title:\"后台任务\""
+    ],
+    [
+      "children:\"Sign in with a different account\"",
+      "children:\"使用其他账号登录\""
+    ],
+    [
+      "children:\"Multi-select\"",
+      "children:\"多选\""
+    ],
+    [
+      "children:\"Add Scheduled Task\"",
+      "children:\"添加计划任务\""
+    ],
+    [
+      "children:\"Delete Project\"",
+      "children:\"删除项目\""
+    ],
+    [
+      "label:\"Reset Zoom\"",
+      "label:\"重置缩放\""
+    ],
+    [
+      "children:\"Any error messages seen when trying to log in\"",
+      "children:\"尝试登录时看到的任何错误消息\""
+    ],
+    [
+      "tooltip:\"Copy Path\"",
+      "tooltip:\"复制路径\""
+    ],
+    [
+      "tooltip:\"Trajectory Debug View\"",
+      "tooltip:\"轨迹调试视图\""
+    ],
+    [
+      "children:\"What quota or feature is being incorrectly limited\"",
+      "children:\"哪个配额或功能被错误地限制了\""
+    ],
+    [
+      "label:\"Go Back\"",
+      "label:\"返回\""
+    ],
+    [
+      "children:\"Go Back\"",
+      "children:\"返回\""
+    ],
+    [
+      "children:\"Back to Scheduled Tasks\"",
+      "children:\"返回计划任务\""
+    ],
+    [
+      "children:\"Transpiling React app...\"",
+      "children:\"正在转译 React 应用...\""
+    ],
+    [
+      "placeholder:\"Search conversations...\"",
+      "placeholder:\"搜索对话...\""
+    ],
+    [
+      "label:\"Toggle Terminal\"",
+      "label:\"切换终端\""
+    ],
+    [
+      "label:\"Use theme to be imported with settings\"",
+      "label:\"在设置中导入主题\""
+    ],
+    [
+      "children:\"Model Label\"",
+      "children:\"模型标签\""
+    ],
+    [
+      "tooltipText:\"Scheduled Tasks\"",
+      "tooltipText:\"计划任务\""
+    ],
+    [
+      "children:\"View MCP settings\"",
+      "children:\"查看 MCP 设置\""
+    ],
+    [
+      "description:\"Prevent the computer from sleeping while the app is running.\"",
+      "description:\"在应用运行时防止电脑进入睡眠状态。\""
+    ],
+    [
+      "children:\"Task Logs\"",
+      "children:\"任务日志\""
+    ],
+    [
+      "children:\"Cancel the current battle mode session and return to the main conversation without applying any changes.\"",
+      "children:\"取消当前的对战模式会话并返回主对话，不应用任何更改。\""
+    ],
+    [
+      "label:\"File Picker\"",
+      "label:\"文件选择器\""
+    ],
+    [
+      "description:\"When enabled, Agent can interact with Google Workspace through the API to search and read documents.\"",
+      "description:\"启用后，Agent 可以通过 API 与 Google Workspace 互动以搜索和读取文档。\""
+    ],
+    [
+      "label:\"Scheduled Tasks\"",
+      "label:\"计划任务\""
+    ],
+    [
+      "children:\"An error ID that helps the team investigate the error.\"",
+      "children:\"用于帮助团队调查错误的错误 ID。\""
+    ],
+    [
+      "children:\"Open Editor\"",
+      "children:\"打开编辑器\""
+    ],
+    [
+      "tooltip:\"Convert to Google Doc\"",
+      "tooltip:\"转换为 Google 文档\""
+    ],
+    [
+      "children:\"Loading logs...\"",
+      "children:\"正在加载日志...\""
+    ],
+    [
+      "`${s.length} File${s.length===1?\"\":\"s\"} With Changes`" ,
+      "`${s.length} 个修改的文件`"
+    ],
+    [
+      "u=a?n?\"Editing\":\"Edited\":i?n?\"Running\":\"Ran\":n?\"Exploring\":\"Explored\"",
+      "u=a?n?\"正在编辑\":\"已编辑\":i?n?\"正在运行\":\"已运行\":n?\"正在探索\":\"已探索\""
+    ],
+    [
+      "`${s} ${s===1?\"file\":\"files\"}`",
+      "`${s} 个文件`"
+    ],
+    [
+      "`Worked for ${bke(V)}`",
+      "`运行了 ${bke(V)}`"
+    ],
+    [
+      "i.terminatedEarly?\"Stopped after\":\"Worked for\"",
+      "i.terminatedEarly?\"超时停止\":\"运行了\""
+    ]
+  ],
+  "workbench": [
+    [
+      "label:\"AI Shortcuts\"",
+      "label:\"AI 快捷键\""
+    ],
+    [
+      "label:\"Download Diagnostics\"",
+      "label:\"下载诊断信息\""
+    ],
+    [
+      "textContent=\"Advanced Settings\"",
+      "textContent=\"高级设置\""
+    ],
+    [
+      "textContent=\"Customizations\"",
+      "textContent=\"高级自定义\""
+    ],
+    [
+      "textContent=\"Manage\"",
+      "textContent=\"管理\""
+    ],
+    [
+      "textContent=\"Snooze\"",
+      "textContent=\"暂停\""
+    ],
+    [
+      "textContent=o?\"Cancel\":\"Start\"",
+      "textContent=o?\"取消\":\"开始\""
+    ],
+    [
+      "textContent=\"Manage MCP servers\"",
+      "textContent=\"管理 MCP 服务器\""
+    ],
+    [
+      "textContent=\"View raw config\"",
+      "textContent=\"查看原始配置\""
+    ],
+    [
+      "textContent=\"Disabled\"",
+      "textContent=\"已禁用\""
+    ],
+    [
+      "label:\"Agent Auto-Fix Lints\"",
+      "label:\"Agent 自动修复 Lint\""
+    ],
+    [
+      "label:\"Auto Execution\"",
+      "label:\"自动执行\""
+    ],
+    [
+      "label:\"Review Policy\"",
+      "label:\"审查策略\""
+    ],
+    [
+      "label:\"Tab Gitignore Access\"",
+      "label:\"Tab Gitignore 访问\""
+    ],
+    [
+      "label:\"Tab Speed\"",
+      "label:\"Tab 速度\""
+    ],
+    [
+      "label:\"Tab to Jump\"",
+      "label:\"Tab 跳转\""
+    ],
+    [
+      "label:\"Tab to Import\"",
+      "label:\"Tab 导入\""
+    ],
+    [
+      "label:\"Auto-Open Edited Files\"",
+      "label:\"自动打开已编辑文件\""
+    ],
+    [
+      "label:\"Open Agent on Reload\"",
+      "label:\"重新加载时打开 Agent\""
+    ],
+    [
+      "label:\"Highlight After Accept\"",
+      "label:\"接受后高亮\""
+    ],
+    [
+      "label:\"Suggestions in Editor\"",
+      "label:\"编辑器中的建议\""
+    ],
+    [
+      "label:\"Enable Tab Sounds (Beta)\"",
+      "label:\"启用 Tab 声音 (Beta)\""
+    ],
+    [
+      "description:[\"Set the speed of tab suggestions\"]",
+      "description:[\"设置 Tab 建议的速度\"]"
+    ],
+    [
+      "description:[\"Open files in the background if the agent creates or edits them\"]",
+      "description:[\"当 Agent 创建或编辑文件时在后台打开它们\"]"
+    ],
+    [
+      "description:[\"Open Agent panel on window reload\"]",
+      "description:[\"窗口重新加载时打开 Agent 面板\"]"
+    ],
+    [
+      "description:[\"Predict the location of your next edit and navigates you there with a tab keypress\"]",
+      "description:[\"预测下一个编辑位置，按 Tab 键即可跳转到该位置\"]"
+    ],
+    [
+      "description:[\"Quickly add and update imports with a tab keypress.\"]",
+      "description:[\"按 Tab 键快速添加并更新导入语句。\"]"
+    ],
+    [
+      "description:[\"Highlight newly inserted text after accepting a Tab completion.\"]",
+      "description:[\"接受 Tab 补全后高亮新插入的文本。\"]"
+    ],
+    [
+      "options:[{label:\"Always Proceed\",value:Q9.TURBO,description:\"Trust the agent to do tasks end-to-end\",isDefaultWhenAvailable:!0},{label:\"Agent Decides\",value:Q9.AUTO,description:\"Assist the agent to complete tasks\"},{label:\"Request Review\",value:Q9.ALWAYS,description:\"Collaborate with the agent to complete tasks\"}]",
+      "options:[{label:\"始终继续\",value:Q9.TURBO,description:\"信任 Agent 端到端地执行任务\",isDefaultWhenAvailable:!0},{label:\"Agent 决定\",value:Q9.AUTO,description:\"辅助 Agent 完成任务\"},{label:\"请求审查\",value:Q9.ALWAYS,description:\"与 Agent 协作完成任务\"}]"
+    ],
+    [
+      "Ivn=[{value:Vz.TURBO,label:\"Always Proceed\",description:\"Agent never asks for review. This maximizes the autonomy of the Agent, but also has the highest risk of the Agent operating over unsafe or injected Artifact content.\",disabledInSecureMode:!0},{value:Vz.ALWAYS,label:\"Always Ask\",description:\"Agent always asks for review.\",disabledInSecureMode:!1}]",
+      "Ivn=[{value:Vz.TURBO,label:\"始终继续\",description:\"Agent 从不请求审查。这最大化了 Agent 的自主性，但也具有 Agent 操作不安全或注入的 Artifact 内容的最高风险。\",disabledInSecureMode:!0},{value:Vz.ALWAYS,label:\"始终询问\",description:\"Agent 始终请求审查。\",disabledInSecureMode:!1}]"
+    ],
+    [
+      "options:[{label:\"Always Proceed\",value:$U.EAGER,description:\"Always auto-execute commands unless they are in your deny list. This also allows Agent to auto-execute Browser controls.\"},{label:\"Request Review\",value:$U.OFF,description:\"Never auto-execute commands unless they are in your allow list.\",isDefaultWhenAvailable:!0}]",
+      "options:[{label:\"始终继续\",value:$U.EAGER,description:\"始终自动执行命令，除非它们在您的拒绝列表中。这也允许 Agent 自动执行浏览器控制。\"},{label:\"请求审查\",value:$U.OFF,description:\"从不自动执行命令，除非它们在您的允许列表中。\",isDefaultWhenAvailable:!0}]"
+    ],
+    [
+      "options:[{label:\"Slow\",value:Fwe.SLOW},{label:\"Fast\",value:Fwe.FAST,isDefaultWhenAvailable:!0}]",
+      "options:[{label:\"慢速\",value:Fwe.SLOW},{label:\"快速\",value:Fwe.FAST,isDefaultWhenAvailable:!0}]"
+    ],
+    [
+      "[R(\"option\",{value:2,children:\"Always Proceed\"}),R(\"option\",{value:0,children:\"Request Review\"})]",
+      "[R(\"option\",{value:2,children:\"始终继续\"}),R(\"option\",{value:0,children:\"请求审查\"})]"
+    ],
+    [
+      "[R(\"option\",{value:2,children:\"Always Proceed\"}),R(\"option\",{value:0,children:\"Always Ask\"})]",
+      "[R(\"option\",{value:2,children:\"始终继续\"}),R(\"option\",{value:0,children:\"始终询问\"})]"
+    ],
+    [
+      "[R(\"option\",{value:2,children:\"Always Proceed\"}),R(\"option\",{value:1,children:\"Request Review\"}),R(\"option\",{value:0,children:\"Disabled\"})]",
+      "[R(\"option\",{value:2,children:\"始终继续\"}),R(\"option\",{value:1,children:\"请求审查\"}),R(\"option\",{value:0,children:\"已禁用\"})]"
+    ],
+    [
+      "\"View and manage Agent memories, workflows, and rules\"",
+      "\"查看和管理 Agent 记忆、工作流和规则\""
+    ],
+    [
+      "children:\"Edit rule\"",
+      "children:\"编辑规则\""
+    ],
+    [
+      "children:\"Edit workflow\"",
+      "children:\"编辑工作流\""
+    ],
+    [
+      "children:\"Edit your SSH configuration\"",
+      "children:\"编辑你的 SSH 配置\""
+    ],
+    [
+      "children:\"Loading...\"",
+      "children:\"加载中...\""
+    ],
+    [
+      "children:\"Loading MCP servers\"",
+      "children:\"正在加载 MCP 服务器\""
+    ],
+    [
+      "children:\"Loading models...\"",
+      "children:\"正在加载模型...\""
+    ],
+    [
+      "children:\"Loading Browser recording...\"",
+      "children:\"正在加载浏览器录制...\""
+    ],
+    [
+      "label:\"Accept hunk\"",
+      "label:\"接受代码块\""
+    ],
+    [
+      "label:\"Run\"",
+      "label:\"运行\""
+    ],
+    [
+      "label:\"Running\"",
+      "label:\"运行中\""
+    ],
+    [
+      "label:\"Open Agent\"",
+      "label:\"打开 Agent\""
+    ],
+    [
+      "label:\"Reset to default\"",
+      "label:\"重置为默认\""
+    ],
+    [
+      "children:\"Review policy\"",
+      "children:\"审查策略\""
+    ],
+    [
+      "children:\"JavaScript execution policy\"",
+      "children:\"JavaScript 执行策略\""
+    ],
+    [
+      "OEh=`Specifies Agent's behavior when asking for review on artifacts, which are documents it creates to enable a richer conversation experience.\n",
+      "OEh=`指定 Agent 在请求审查产物（Agent 创建的用于提供更丰富对话体验的文档）时的行为。\n"
+    ],
+    [
+      "`Controls whether terminal commands require your approval before running.\n\nNote: A change to this setting will only apply to new messages sent to Agent. In-progress responses will use the previous setting value.`",
+      "`控制终端命令在运行前是否需要您的批准。\n\n注意：对此设置的更改将仅适用于发送给 Agent 的新消息。进行中的响应将使用先前的设置值。`"
+    ],
+    [
+      "resolveOptionToString:e=>{switch(e){case LE.EAGER:return\"Always Proceed\";case LE.OFF:return\"Request Review\";default:return\"Proceed in Sandbox\"}}",
+      "resolveOptionToString:e=>{switch(e){case LE.EAGER:return\"始终继续\";case LE.OFF:return\"请求审查\";default:return\"在沙盒中运行\"}}"
+    ],
+    [
+      "\"Agent never asks for confirmation before executing terminal commands (except those in the Deny list). This provides the Agent with the maximum ability to operate over long periods without intervention, but also has the highest risk of an Agent executing an unsafe terminal command.\"",
+      "\"Agent 在执行终端命令之前从不请求确认（拒绝列表中的命令除外）。这为 Agent 提供了在没有干预的情况下长期运行的最大能力，但也存在 Agent 执行不安全终端命令的最高风险。\""
+    ],
+    [
+      "\"Agent always asks for confirmation before executing terminal commands (except those in the Allow list).\"",
+      "\"Agent 在执行终端命令之前始终请求确认（允许列表中的命令除外）。\""
+    ],
+    [
+      "\"Terminal command automatically proceeds if the command runs inside the sandbox. Otherwise, it requests review.\"",
+      "\"如果终端命令在沙盒中运行，则自动执行该命令。否则，它将请求审查。\""
+    ],
+    [
+      "\" For Unix shells, an allow list entry matches a command if its space-separated tokens form a prefix of the command's tokens. For PowerShell, the entry tokens may match any contiguous subsequence of the command tokens.\"",
+      "\" 对于 Unix shell，如果允许列表条目以空格分隔的标记是命令标记的前缀，则该条目匹配该命令。对于 PowerShell，条目标记可以匹配命令标记的任何连续子序列。\""
+    ],
+    [
+      "case FC.DISABLED:return\"Disabled\";case FC.ALWAYS_ASK:return\"Request Review\";case FC.TURBO:return\"Always Proceed\";default:return\"Request Review\"",
+      "case FC.DISABLED:return\"已禁用\";case FC.ALWAYS_ASK:return\"请求审查\";case FC.TURBO:return\"始终继续\";default:return\"请求审查\""
+    ],
+    [
+      "resolveOptionToString:e=>Ivn.find(i=>i.value===e)?.label||\"Request Review\"",
+      "resolveOptionToString:e=>Ivn.find(i=>i.value===e)?.label||\"请求审查\""
+    ],
+    [
+      "description:[\"Always Proceed - Agent never asks for confirmation before executing terminal commands (except those in the Deny List)\",\"Request Review - Agent always asks for confirmation before executing terminal commands (except those in the Allow List)\"]",
+      "description:[\"始终继续 - Agent 在执行终端命令之前从不请求确认（拒绝列表中的命令除外）\",\"请求审查 - Agent 在执行终端命令之前始终请求确认（允许列表中的命令除外）\"]"
+    ],
+    [
+      "description:[\"Always Proceed - Trust the agent to do tasks end-to-end\",\"Agent Decides - Assist the agent to complete tasks\",\"Request Review - Collaborate with the agent to complete tasks\"]",
+      "description:[\"始终继续 - 信任 Agent 端到端地执行任务\",\"Agent 决定 - 辅助 Agent 完成任务\",\"请求审查 - 与 Agent 协作完成任务\"]"
+    ],
+    [
+      "R(\"option\",{value:2,children:\"Always Proceed\"})",
+      "R(\"option\",{value:2,children:\"始终继续\"})"
+    ],
+    [
+      "R(\"option\",{value:0,children:\"Request Review\"})",
+      "R(\"option\",{value:0,children:\"请求审查\"})"
+    ],
+    [
+      "R(\"option\",{value:0,children:\"Always Ask\"})",
+      "R(\"option\",{value:0,children:\"始终询问\"})"
+    ],
+    [
+      "R(\"option\",{value:1,children:\"Request Review\"})",
+      "R(\"option\",{value:1,children:\"请求审查\"})"
+    ],
+    [
+      "R(\"option\",{value:0,children:\"Disabled\"})",
+      "R(\"option\",{value:0,children:\"已禁用\"})"
+    ],
+    [
+      "label:\"Getting scripts...\"",
+      "label:\"正在获取脚本...\""
+    ],
+    [
+      "label:\"Restart Main Language Server\"",
+      "label:\"重启主语言服务器\""
+    ],
+    [
+      "label:\"Open Conversation History\"",
+      "label:\"打开对话历史\""
+    ],
+    [
+      "children:\"This skill is installed in your workspace\"",
+      "children:\"此技能已在您的工作区安装\""
+    ],
+    [
+      "label:\"Go Back\"",
+      "label:\"返回\""
+    ],
+    [
+      "label:\"Purchase Credits\"",
+      "label:\"购买额度\""
+    ],
+    [
+      "tooltip:\"Trajectory Debug View\"",
+      "tooltip:\"轨迹调试视图\""
+    ],
+    [
+      "title:\"Layout Controls\"",
+      "title:\"布局控制\""
+    ],
+    [
+      "children:\"Trajectory Stats\"",
+      "children:\"轨迹统计\""
+    ],
+    [
+      "children:\"No message prompts available\"",
+      "children:\"没有可用的消息提示\""
+    ],
+    [
+      "title:\"Background Tasks\"",
+      "title:\"后台任务\""
+    ],
+    [
+      "label:\"See Plans\"",
+      "label:\"查看方案\""
+    ],
+    [
+      "children:\"Cannot send message to subagent.\"",
+      "children:\"无法向 subagent 发送消息。\""
+    ],
+    [
+      "description:\"When enabled, Agent can interact with Google Workspace through the API to search and read documents.\"",
+      "description:\"启用后，Agent 可以通过 API 与 Google Workspace 互动以搜索和读取文档。\""
+    ],
+    [
+      "children:\"Add Folder\"",
+      "children:\"添加文件夹\""
+    ],
+    [
+      "title:\"Stop Subagent\"",
+      "title:\"停止 Subagent\""
+    ],
+    [
+      "label:\"Open Workspace Selector\"",
+      "label:\"打开工作区选择器\""
+    ],
+    [
+      "children:\"No generator metadata available\"",
+      "children:\"没有可用的生成器元数据\""
+    ],
+    [
+      "children:\"Sign in with a different account\"",
+      "children:\"使用其他账号登录\""
+    ],
+    [
+      "children:\"Cancel step\"",
+      "children:\"取消步骤\""
+    ],
+    [
+      "label:\"Keep In Menu Bar\"",
+      "label:\"保留在菜单栏\""
+    ],
+    [
+      "children:\"Any error messages\"",
+      "children:\"任何错误消息\""
+    ],
+    [
+      "title:\"Project Settings\"",
+      "title:\"项目设置\""
+    ],
+    [
+      "children:\"Loading logs...\"",
+      "children:\"正在加载日志...\""
+    ],
+    [
+      "description:\"Invalid auth token\"",
+      "description:\"无效的授权 Token\""
+    ],
+    [
+      "children:\"Multi-select\"",
+      "children:\"多选\""
+    ],
+    [
+      "description:\"Multiple documents\"",
+      "description:\"多个文档\""
+    ],
+    [
+      "children:\"Error loading Browser recording\"",
+      "children:\"加载浏览器录制出错\""
+    ],
+    [
+      "children:\"Cancel the current battle mode session and return to the main conversation without applying any changes.\"",
+      "children:\"取消当前的对战模式会话并返回主对话，不应用任何更改。\""
+    ],
+    [
+      "children:\"How this feature would help you and other users\"",
+      "children:\"此功能将如何帮助您和其他用户\""
+    ],
+    [
+      "children:\"View documentation\"",
+      "children:\"查看文档\""
+    ],
+    [
+      "children:\"Default Branch\"",
+      "children:\"默认分支\""
+    ],
+    [
+      "children:\"Match case (Aa)\"",
+      "children:\"匹配大小写 (Aa)\""
+    ],
+    [
+      "description:\"Prevent the computer from sleeping while the app is running.\"",
+      "description:\"在应用运行时防止电脑进入睡眠状态。\""
+    ],
+    [
+      "children:\"Google Drive Access\"",
+      "children:\"Google 云端硬盘访问权限\""
+    ],
+    [
+      "children:\"Transpiling React app...\"",
+      "children:\"正在转译 React 应用...\""
+    ],
+    [
+      "children:\"An error ID that helps the team investigate the error.\"",
+      "children:\"用于帮助团队调查错误的错误 ID。\""
+    ],
+    [
+      "children:\"Any relevant information\"",
+      "children:\"任何相关信息\""
+    ],
+    [
+      "children:\"Copy Path\"",
+      "children:\"复制路径\""
+    ],
+    [
+      "label:\"Reset Zoom\"",
+      "label:\"重置缩放\""
+    ],
+    [
+      "children:\"What quota or feature is being incorrectly limited\"",
+      "children:\"哪个配额或功能被错误地限制了\""
+    ],
+    [
+      "children:\"Quick Start\"",
+      "children:\"快速开始\""
+    ],
+    [
+      "children:\"Go Back\"",
+      "children:\"返回\""
+    ],
+    [
+      "children:\"Open Editor\"",
+      "children:\"打开编辑器\""
+    ],
+    [
+      "children:\"Model Label\"",
+      "children:\"模型标签\""
+    ],
+    [
+      "description:\"If enabled, you can manage your conversations from the Antigravity website. Please reload the application to apply this setting.\"",
+      "description:\"启用后，您可以从 Antigravity 网站管理您的对话。请重新加载应用程序以应用此设置。\""
+    ],
+    [
+      "label:\"Ask Agent for Help\"",
+      "label:\"请求 Agent 帮助\""
+    ],
+    [
+      "children:\"Enter Google Cloud Project Details\"",
+      "children:\"输入 Google Cloud 项目详情\""
+    ],
+    [
+      "placeholder:\"Search conversations...\"",
+      "placeholder:\"搜索对话...\""
+    ],
+    [
+      "label:\"Mark as Unread\"",
+      "label:\"标记为未读\""
+    ],
+    [
+      "tooltip:\"Convert to Google Doc\"",
+      "tooltip:\"转换为 Google 文档\""
+    ],
+    [
+      "label:\"File Picker\"",
+      "label:\"文件选择器\""
+    ],
+    [
+      "children:\"Task Logs\"",
+      "children:\"任务日志\""
+    ],
+    [
+      "children:\"Back to Scheduled Tasks\"",
+      "children:\"返回计划任务\""
+    ],
+    [
+      "title:\"Update Available\"",
+      "title:\"有可用更新\""
+    ],
+    [
+      "children:\"Max Tokens\"",
+      "children:\"最大 Token 数\""
+    ],
+    [
+      "children:\"Loading plugins...\"",
+      "children:\"正在加载插件...\""
+    ],
+    [
+      "children:\"Scheduled Tasks\"",
+      "children:\"计划任务\""
+    ],
+    [
+      "title:\"Files Changed\"",
+      "title:\"已修改的文件\""
+    ],
+    [
+      "label:\"Use theme to be imported with settings\"",
+      "label:\"在设置中导入主题\""
+    ],
+    [
+      "children:\"Not Found\"",
+      "children:\"未找到\""
+    ],
+    [
+      "label:\"Scheduled Tasks\"",
+      "label:\"计划任务\""
+    ],
+    [
+      "children:\"Delete Project\"",
+      "children:\"删除项目\""
+    ],
+    [
+      "children:\"MCP Servers Disabled\"",
+      "children:\"MCP 服务器已禁用\""
+    ],
+    [
+      "tooltipText:\"Scheduled Tasks\"",
+      "tooltipText:\"计划任务\""
+    ],
+    [
+      "label:\"Toggle Terminal\"",
+      "label:\"切换终端\""
+    ],
+    [
+      "children:\"Actual behavior\"",
+      "children:\"实际行为\""
+    ],
+    [
+      "title:\"Last page\"",
+      "title:\"最后一页\""
+    ],
+    [
+      "children:\"to select\"",
+      "children:\"选择\""
+    ],
+    [
+      "children:\"Cancel task\"",
+      "children:\"取消任务\""
+    ],
+    [
+      "children:\"Terms of Service\"",
+      "children:\"服务条款\""
+    ],
+    [
+      "children:\"This workspace no longer exists. You cannot send messages.\"",
+      "children:\"此工作区已不存在。您无法发送消息。\""
+    ],
+    [
+      "children:\"Any error messages seen when trying to log in\"",
+      "children:\"尝试登录时看到的任何错误消息\""
+    ],
+    [
+      "tooltip:\"Copy Path\"",
+      "tooltip:\"复制路径\""
+    ],
+    [
+      "tooltip:\"Open in Notebook View\"",
+      "tooltip:\"在 Notebook 视图中打开\""
+    ],
+    [
+      "children:\"What functionality you expect your account tier to have available that is missing\"",
+      "children:\"您期望您的账户级别拥有哪些目前缺失的功能\""
+    ],
+    [
+      "tooltip:\"Open in Editor\"",
+      "tooltip:\"在编辑器中打开\""
+    ],
+    [
+      "children:\"No log outputs for this task\"",
+      "children:\"此任务无日志输出\""
+    ],
+    [
+      "children:\"Python Coming Soon\"",
+      "children:\"Python 即将推出\""
+    ],
+    [
+      "children:\"Loading events...\"",
+      "children:\"正在加载事件...\""
+    ],
+    [
+      "children:\"Add Scheduled Task\"",
+      "children:\"添加计划任务\""
+    ],
+    [
+      "children:\"View MCP settings\"",
+      "children:\"查看 MCP 设置\""
+    ],
+    [
+      "children:\"Failed to move changes\"",
+      "children:\"移动更改失败\""
+    ],
+    [
+      "title:\"Previous page\"",
+      "title:\"上一页\""
+    ],
+    [
+      "label:\"Close Terminal Tab\"",
+      "label:\"关闭终端标签页\""
+    ],
+    [
+      "children:\"Customizations\"",
+      "children:\"自定义\""
+    ],
+    [
+      "children:[\"Customize Agent to get a better, more personalized experience.\",",
+      "children:[\"自定义 Agent 以获得更好的个性化体验。\","
+    ],
+    [
+      "children:\"Learn more\"",
+      "children:\"了解更多\""
+    ],
+    [
+      "label:\"Rules\"",
+      "label:\"规则\""
+    ],
+    [
+      "label:\"Workflows\"",
+      "label:\"工作流\""
+    ],
+    [
+      "children:\"Rules\"",
+      "children:\"规则\""
+    ],
+    [
+      "children:\"Workflows\"",
+      "children:\"工作流\""
+    ],
+    [
+      "children:\"Rules help guide the behavior of Agent.\"",
+      "children:\"规则用于指导 Agent 的行为。\""
+    ],
+    [
+      "children:\"Workspace\"",
+      "children:\"工作区\""
+    ],
+    [
+      "children:\"Global\"",
+      "children:\"全局\""
+    ],
+    [
+      "\"aria-label\":\"Refresh rules\"",
+      "\"aria-label\":\"刷新规则\""
+    ],
+    [
+      "children:\"Refresh rules\"",
+      "children:\"刷新规则\""
+    ],
+    [
+      "\"aria-label\":\"Refresh workflows\"",
+      "\"aria-label\":\"刷新工作流\""
+    ],
+    [
+      "children:\"Refresh workflows\"",
+      "children:\"刷新工作流\""
+    ],
+    [
+      "children:\"Past Conversations\"",
+      "children:\"历史对话\""
+    ],
+    [
+      "children:\"Additional Options\"",
+      "children:\"更多选项\""
+    ],
+    [
+      "children:\"New Conversation\"",
+      "children:\"新建对话\""
+    ],
+    [
+      "label:\"New Conversation\"",
+      "label:\"新建对话\""
+    ],
+    [
+      "content:\"New Conversation in Workspace\"",
+      "content:\"在此工作区新建对话\""
+    ],
+    [
+      "content:\"New Conversation in Project\"",
+      "content:\"在此项目新建对话\""
+    ],
+    [
+      "label:\"Customization\"",
+      "label:\"自定义\""
+    ],
+    [
+      "label:\"MCP Servers\"",
+      "label:\"MCP 服务器\""
+    ],
+    [
+      "label:\"Export\"",
+      "label:\"导出\""
+    ],
+    [
+      "children:\"Review\"",
+      "children:\"审查\""
+    ],
+    [
+      "children:\"Review Changes\"",
+      "children:\"审查改动\""
+    ],
+    [
+      "case\"reviewChangesView\":return\"Review Changes\"",
+      "case\"reviewChangesView\":return\"审查改动\""
+    ],
+    [
+      "l=r?n?\"Editing\":\"Edited\":s?n?\"Running\":\"Ran\":n?\"Exploring\":\"Explored\"",
+      "l=r?n?\"正在编辑\":\"已编辑\":s?n?\"正在运行\":\"已运行\":n?\"正在探索\":\"已探索\""
+    ],
+    [
+      "`${o} ${o===1?\"file\":\"files\"}`",
+      "`${o} 个文件`"
+    ],
+    [
+      "`Worked for ${vgn(E)}`",
+      "`运行了 ${vgn(E)}`"
+    ],
+    [
+      "s.terminatedEarly?\"Stopped after\":\"Worked for\"",
+      "s.terminatedEarly?\"超时停止\":\"运行了\""
+    ],
+    [
+      "S.terminatedEarly?\"Stopped after\":\"Worked for\"",
+      "S.terminatedEarly?\"超时停止\":\"运行了\""
+    ]
+  ]
+}

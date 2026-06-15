@@ -1,0 +1,162 @@
+[
+  {
+    "label": "Split Terminal",
+    "block": "{id:\"createSplitTerminal\",label:\"Split Terminal\",icon:\"splitscreen\",keybindings:{binding:{mod:!0,key:\"\\\\\"}}}"
+  },
+  {
+    "label": "Confirm Window Reload",
+    "block": "{isProviderSetting:!0,screen:\"Editor\",label:\"Confirm Window Reload\",description:'Toggle if a confirmation is shown when using the \"Reload Window\" button.',settingType:\"switch\"}"
+  },
+  {
+    "label": "Enable Demo Mode (Beta)",
+    "block": "{isProviderSetting:!0,screen:\"Permissions\",label:\"Enable Demo Mode (Beta)\",description:'When enabled, your UI will be slightly modified to ensure more consistent demos. This is only recommended for demo purposes. In most cases, you can run \"Antigravity: Start Demo Mode\" and \"Antigravity: Stop Demo Mode\" to control this switch and update your ~/.gemini/antigravity data directory.',settingType:\"switch\"}"
+  },
+  {
+    "label": "Agent Host Address",
+    "block": "{isProviderSetting:!0,screen:\"Permissions\",label:\"Agent Host Address\",description:`When running commands, the agent will try to use this address, and fall back to to the \"connector.host.featureDefault\" host if not defined.\n\nNote: hosts set here with auto-run enabled will have internet access restricted soon.`,settingType:\"text\",type:\"string\"}"
+  },
+  {
+    "label": "Verbose agent chat",
+    "block": "{isProviderSetting:!0,screen:\"Appearance\",label:\"Verbose agent chat\",description:\"Display and preserve intermediate thinking steps\",settingType:\"switch\"}"
+  },
+  {
+    "label": "Include Jetski Default Customizations",
+    "block": "{isProviderSetting:!0,screen:\"Customizations\",label:\"Include Jetski Default Customizations\",description:\"When enabled, the agent will include default customizations, including default skills.\",settingType:\"switch\"}"
+  },
+  {
+    "label": "Local",
+    "block": "{environment:Ad.LOCAL,label:\"Local\",description:\"Run in your current workspace\",icon:\"computer\"}"
+  },
+  {
+    "label": "Worktree",
+    "block": "{environment:Ad.BACKGROUND_WORKTREE,label:\"Worktree\",description:\"Run in a new worktree\",icon:\"fork_right\"}"
+  },
+  {
+    "label": "CitC Clone",
+    "block": "{environment:Ad.BACKGROUND_CITC_WORKSPACE_CLONE,label:\"CitC Clone\",description:\"Clone current workspace into a new independent workspace\",icon:\"cloud\"}"
+  },
+  {
+    "label": "Toggle Fullscreen",
+    "block": "{label:\"Toggle Fullscreen\",onClick:()=>{a.toggleManagerWindowFullscreen()}}"
+  },
+  {
+    "label": "Marketing Emails",
+    "block": "{label:\"Marketing Emails\",description:`Receive product updates, tips, and promotions from Google ${r.product.nameShort} via email.`,userSettings:u}"
+  },
+  {
+    "label": "Email",
+    "block": "{label:\"Email\",description:a?\"Peter Pan\":n.email,rightElement:p(lo,{onClick:async()=>{await t.logout(),g(),e({to:co.onboarding,replace:!0,search:{login:!0}})},children:\"Sign Out\"})}"
+  },
+  {
+    "label": "Not Signed In",
+    "block": "{label:\"Not Signed In\",description:`Sign in to use ${Z7i.name}!`,rightElement:p(Eo,{onClick:()=>t.showLoginFlow(),children:\"Sign In\"})}"
+  },
+  {
+    "label": "File Reads",
+    "block": "{action:\"read_file\",label:\"File Reads\",description:\"Allow/deny agent read access to specific files or directories.\",grants:s,onChangeGrants:o,placeholder:\"e.g., /path/to/file\",borderless:!0}"
+  },
+  {
+    "label": "Terminal Commands",
+    "block": "{action:\"command\",label:\"Terminal Commands\",description:\"Allow/deny specific terminal commands.\",grants:s,onChangeGrants:o,placeholder:\"e.g., npm test\",borderless:!0}"
+  },
+  {
+    "label": "Commands Outside Sandbox",
+    "block": "{action:\"unsandboxed\",label:\"Commands Outside Sandbox\",description:\"Allow/deny agent command execution outside the sandbox.\",grants:s,onChangeGrants:o,placeholder:\"e.g., curl\",borderless:!0}"
+  },
+  {
+    "label": "File Access Rules",
+    "block": "{label:\"File Access Rules\",badge:Y>0?Y:void 0,description:\"Configure allowed and denied paths for file reads and writes.\",rightElement:p(lo,{onClick:()=>{re(\"file\")},children:\"Open\"})}"
+  },
+  {
+    "label": "Terminal Commands",
+    "block": "{label:\"Terminal Commands\",badge:P>0?P:void 0,description:\"Configure allowed terminal commands.\",rightElement:p(lo,{onClick:()=>{re(\"command\")},children:\"Open\"})}"
+  },
+  {
+    "label": "Commands Outside Sandbox",
+    "block": "{label:\"Commands Outside Sandbox\",badge:W>0?W:void 0,description:\"Configure allowed commands outside the sandbox.\",rightElement:p(lo,{onClick:()=>{re(\"unsandboxed\")},children:\"Open\"})}"
+  },
+  {
+    "label": "Security Preset",
+    "block": "{label:\"Security Preset\",description:De,value:Se===\"custom\"?\"Custom\":One[ge][Se]?.displayName??\"Custom\",options:[...ie.presets,\"custom\"],displayResolver:it=>it===\"custom\"?\"Custom\":One[ge][it]?.displayName??\"Custom\",resolveOptionToDescription:it=>it===\"custom\"?\"Manually customize individual settings.\":One[ge][it]?.shortDescription,onSelect:it=>{Ye(it),Ue(it)},wide:!0}"
+  },
+  {
+    "label": "Disable Eager Cloning",
+    "block": "{settingKey:Mr.DISABLE_EAGER_CLONING,label:\"Disable Eager Cloning\",description:\"Disable pre-warming of workspace clones.\"}"
+  },
+  {
+    "label": "Maximum Active Workspaces",
+    "block": "{settingKey:Mr.MAX_CLONED_WORKSPACES,label:\"Maximum Active Workspaces\",description:\"Maximum number of concurrent active source workspaces tracked in the clone pools.\",type:\"number\",min:1}"
+  },
+  {
+    "label": "Maximum Clones Per Workspace",
+    "block": "{settingKey:Mr.MAX_CLONES_PER_WORKSPACE,label:\"Maximum Clones Per Workspace\",description:\"Maximum number of pre-warmed workspace clones cached per active source workspace.\",type:\"number\",min:1,max:8}"
+  },
+  {
+    "label": "Execute URLs",
+    "block": "{action:\"execute_url\",label:\"Execute URLs\",description:\"Allow/deny agent browser actuation access to specific URLs.\",grants:r,onChangeGrants:f=>{t.setPrefValue(Mr.PERMISSION_GRANTS_GLOBAL,f)},placeholder:\"e.g., https://example.com\",borderless:!0}"
+  },
+  {
+    "label": "All tools (*)",
+    "block": "{value:\"*\",label:\"All tools (*)\",description:\"Hook will trigger if any tool is executed.\"}"
+  },
+  {
+    "label": "run_command",
+    "block": "{value:\"run_command\",label:\"run_command\",description:\"Hook will only trigger if the tool name matches run_command.\"}"
+  },
+  {
+    "label": "run_command or view_file",
+    "block": "{value:\"run_command|view_file\",label:\"run_command or view_file\",description:\"Hook will only trigger if the tool name matches run_command or view_file.\"}"
+  },
+  {
+    "label": "Browser tools (browser_.*)",
+    "block": "{value:\"browser_.*\",label:\"Browser tools (browser_.*)\",description:\"Hook will only trigger if the tool name starts with browser_.\"}"
+  },
+  {
+    "label": "Include Jetski Default Customizations",
+    "block": "{settingKey:Mr.INCLUDE_JETSKI_DEFAULT_CUSTOMIZATIONS,label:\"Include Jetski Default Customizations\",description:\"When enabled, the agent will include default customizations, including default skills.\"}"
+  },
+  {
+    "label": "Manage Hooks",
+    "block": "{label:\"Manage Hooks\",description:\"Configure agent hooks\",rightElement:p(lo,{onClick:()=>{j(\"hooks\")},children:\"Customize\"})}"
+  },
+  {
+    "label": "Skill Custom Paths",
+    "block": "{label:\"Skill Custom Paths\",description:F,currentList:ee,onDidChangeList:fe,placeholder:\"Enter directory path...\"}"
+  },
+  {
+    "label": "Create Documents",
+    "block": "{label:\"Create Documents\",description:\"Gives the agent permission to create and upload documents to google drive\",checked:g.canCreate,onCheckedChange:C}"
+  },
+  {
+    "label": "Search",
+    "block": "{label:\"Search\",description:\"Gives the agent permission to search through google drive. The agent will only see file titles, not file contents\",checked:g.canSearch,onCheckedChange:N}"
+  },
+  {
+    "label": "Marketplace Item URL",
+    "block": "{label:\"Marketplace Item URL\",description:`Changes the base URL on each extension page. You must restart ${t.nameShort} to use the new marketplace after changing this value.`,configurationKey:\"antigravity.marketplaceGalleryItemURL\",placeholder:\"https://open-vsx.org/vscode/item\"}"
+  },
+  {
+    "label": "Marketplace Gallery URL",
+    "block": "{label:\"Marketplace Gallery URL\",description:`Changes the base URL for marketplace search results. You must restart ${t.nameShort} to use the new marketplace after changing this value.`,configurationKey:\"antigravity.marketplaceExtensionGalleryServiceURL\",placeholder:\"https://open-vsx.org/vscode/gallery\"}"
+  },
+  {
+    "label": "Read Files",
+    "block": "{action:\"read_file\",label:\"Read Files\",description:\"Paths the agent can read inside this workspace.\",grants:V,onChangeGrants:x,placeholder:\"Enter file or directory path...\",borderless:!0}"
+  },
+  {
+    "label": "Write Files",
+    "block": "{action:\"write_file\",label:\"Write Files\",description:\"Paths the agent can modify inside this workspace.\",grants:V,onChangeGrants:x,placeholder:\"Enter file or directory path...\",borderless:!0}"
+  },
+  {
+    "label": "Commands Outside Sandbox",
+    "block": "{action:\"unsandboxed\",label:\"Commands Outside Sandbox\",description:\"Commands the agent can run outside the sandbox in this workspace.\",grants:V,onChangeGrants:x,placeholder:\"e.g., curl\",borderless:!0}"
+  },
+  {
+    "label": "Safe Merge",
+    "block": "{value:\"safe_merge\",label:\"Safe Merge\",description:\"Checks for pending changes before merging.\",enumValue:wte?.SAFE_MERGE??2}"
+  },
+  {
+    "label": "Overwrite",
+    "block": "{value:\"overwrite\",label:\"Overwrite\",description:\"Overwrites changes in the target workspace.\",enumValue:wte?.OVERWRITE??1}"
+  }
+]

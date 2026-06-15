@@ -8,6 +8,14 @@
     ],
     "version": "1.0.0",
     "contents": {
-        "bundle": {}
+        "bundle": {
+            "Provide &&Feedback": "提供反馈(&&F)",
+            "Provide Feedback": "提供反馈",
+            "Download Diagnostics": "下载诊断信息",
+            "Docs": "文档",
+            "Report Issue": "报告问题",
+            "Changelog": "更新日志",
+            "Quick Settings Panel": "快速设置面板"
+        }
     }
 }
