@@ -962,23 +962,23 @@
     ],
     [
       "{isProviderSetting:!0,screen:\"Editor\",label:\"Confirm Window Reload\",description:'Toggle if a confirmation is shown when using the \"Reload Window\" button.',settingType:\"switch\"}",
-      "{isProviderSetting:!0,screen:\"Editor\",label:\"确认窗口重新加载\",description:\"控制在使用“重新加载窗口”按钮时是否显示确认提示。\",settingType:\"switch\"}"
+      "{isProviderSetting:!0,screen:\"Editor\",label:\"确认窗口重新加载\",description:'切换在使用“重新加载窗口”按钮时是否显示确认提示。',settingType:\"switch\"}"
     ],
     [
       "{isProviderSetting:!0,screen:\"Permissions\",label:\"Enable Demo Mode (Beta)\",description:'When enabled, your UI will be slightly modified to ensure more consistent demos. This is only recommended for demo purposes. In most cases, you can run \"Antigravity: Start Demo Mode\" and \"Antigravity: Stop Demo Mode\" to control this switch and update your ~/.gemini/antigravity data directory.',settingType:\"switch\"}",
-      "{isProviderSetting:!0,screen:\"Permissions\",label:\"启用演示模式 (测试版)\",description:\"启用后，您的 UI 将会稍作修改以确保演示的一致性。这仅建议在演示时使用。在大多数情况下，您可以运行“Antigravity: Start Demo Mode”和“Antigravity: Stop Demo Mode”命令来控制此开关并更新您的 ~/.gemini/antigravity 数据目录。\",settingType:\"switch\"}"
+      "{isProviderSetting:!0,screen:\"Permissions\",label:\"启用演示模式 (Beta)\",description:'启用后，UI 将稍作修改以确保演示的一致性。这仅建议用于演示目的。在大多数情况下，您可以运行“Antigravity: Start Demo Mode”和“Antigravity: Stop Demo Mode”来控制此开关并更新您的 ~/.gemini/antigravity 数据目录。',settingType:\"switch\"}"
     ],
     [
       "{isProviderSetting:!0,screen:\"Permissions\",label:\"Agent Host Address\",description:`When running commands, the agent will try to use this address, and fall back to to the \"connector.host.featureDefault\" host if not defined.\n\nNote: hosts set here with auto-run enabled will have internet access restricted soon.`,settingType:\"text\",type:\"string\"}",
-      "{isProviderSetting:!0,screen:\"Permissions\",label:\"Agent 主机地址\",description:\"运行命令时，Agent 将尝试使用此地址，如果未定义，将回退到“connector.host.featureDefault”主机。\\n\\n注意：此处设置且启用了自动运行的主机，其互联网访问权限很快将会受到限制。\",settingType:\"text\",type:\"string\"}"
+      "{isProviderSetting:!0,screen:\"Permissions\",label:\"Agent 主机地址\",description:`When running commands, the agent will try to use this address, and fall back to to the \"connector.host.featureDefault\" host if not defined.\n\nNote: hosts set here with auto-run enabled will have internet access restricted soon.`,settingType:\"text\",type:\"string\"}"
     ],
     [
       "{isProviderSetting:!0,screen:\"Appearance\",label:\"Verbose agent chat\",description:\"Display and preserve intermediate thinking steps\",settingType:\"switch\"}",
-      "{isProviderSetting:!0,screen:\"Appearance\",label:\"Agent 详细聊天\",description:\"显示并保留中间思考步骤\",settingType:\"switch\"}"
+      "{isProviderSetting:!0,screen:\"Appearance\",label:\"详细 Agent 聊天\",description:\"显示并保留中间思考步骤\",settingType:\"switch\"}"
     ],
     [
       "{isProviderSetting:!0,screen:\"Customizations\",label:\"Include Jetski Default Customizations\",description:\"When enabled, the agent will include default customizations, including default skills.\",settingType:\"switch\"}",
-      "{isProviderSetting:!0,screen:\"Customizations\",label:\"包含 Jetski 默认自定义配置\",description:\"启用后，Agent 将包含默认的自定义配置，包括默认技能。\",settingType:\"switch\"}"
+      "{isProviderSetting:!0,screen:\"Customizations\",label:\"包含 Jetski 默认自定义\",description:\"启用后，Agent 将包含默认自定义设置，包括默认技能。\",settingType:\"switch\"}"
     ],
     [
       "{environment:Ad.LOCAL,label:\"Local\",description:\"Run in your current workspace\",icon:\"computer\"}",
@@ -986,7 +986,7 @@
     ],
     [
       "{environment:Ad.BACKGROUND_WORKTREE,label:\"Worktree\",description:\"Run in a new worktree\",icon:\"fork_right\"}",
-      "{environment:Ad.BACKGROUND_WORKTREE,label:\"工作树\",description:\"在新工作树中运行\",icon:\"fork_right\"}"
+      "{environment:Ad.BACKGROUND_WORKTREE,label:\"工作树 (Worktree)\",description:\"在新的工作树中运行\",icon:\"fork_right\"}"
     ],
     [
       "{environment:Ad.BACKGROUND_CITC_WORKSPACE_CLONE,label:\"CitC Clone\",description:\"Clone current workspace into a new independent workspace\",icon:\"cloud\"}",
@@ -998,15 +998,15 @@
     ],
     [
       "{label:\"Marketing Emails\",description:`Receive product updates, tips, and promotions from Google ${r.product.nameShort} via email.`,userSettings:u}",
-      "{label:\"营销邮件\",description:\"通过电子邮件接收来自 Google ${r.product.nameShort} 的产品更新、提示和促销信息。\",userSettings:u}"
+      "{label:\"营销邮件\",description:`通过电子邮件接收来自 Google ${r.product.nameShort} 的产品更新、提示和促销信息。`,userSettings:u}"
     ],
     [
       "{label:\"Email\",description:a?\"Peter Pan\":n.email,rightElement:p(lo,{onClick:async()=>{await t.logout(),g(),e({to:co.onboarding,replace:!0,search:{login:!0}})},children:\"Sign Out\"})}",
-      "{label:\"电子邮件\",description:a?\"Peter Pan\":n.email,rightElement:p(lo,{onClick:async()=>{await t.logout(),g(),e({to:co.onboarding,replace:!0,search:{login:!0}})},children:\"退出登录\"})}"
+      "{label:\"Email\",description:a?\"Peter Pan\":n.email,rightElement:p(lo,{onClick:async()=>{await t.logout(),g(),e({to:co.onboarding,replace:!0,search:{login:!0}})},children:\"退出登录\"})}"
     ],
     [
       "{label:\"Not Signed In\",description:`Sign in to use ${Z7i.name}!`,rightElement:p(Eo,{onClick:()=>t.showLoginFlow(),children:\"Sign In\"})}",
-      "{label:\"未登录\",description:\"登录以使用 ${Z7i.name}！\",rightElement:p(Eo,{onClick:()=>t.showLoginFlow(),children:\"登录\"})}"
+      "{label:\"未登录\",description:`登录以使用 ${Z7i.name}！`,rightElement:p(Eo,{onClick:()=>t.showLoginFlow(),children:\"登录\"})}"
     ],
     [
       "{action:\"read_file\",label:\"File Reads\",description:\"Allow/deny agent read access to specific files or directories.\",grants:s,onChangeGrants:o,placeholder:\"e.g., /path/to/file\",borderless:!0}",
@@ -1022,15 +1022,15 @@
     ],
     [
       "{label:\"File Access Rules\",badge:Y>0?Y:void 0,description:\"Configure allowed and denied paths for file reads and writes.\",rightElement:p(lo,{onClick:()=>{re(\"file\")},children:\"Open\"})}",
-      "{label:\"文件访问规则\",badge:Y>0?Y:void 0,description:\"配置允许和拒绝的文件读写路径。\",rightElement:p(lo,{onClick:()=>{re(\"file\")},children:\"打开\"})}"
+      "{label:\"文件访问规则\",badge:Y>0?Y:void 0,description:\"配置允许和拒绝的文件读取和修改路径。\",rightElement:p(lo,{onClick:()=>{re(\"file\")},children:\"打开\"})}"
     ],
     [
       "{label:\"Terminal Commands\",badge:P>0?P:void 0,description:\"Configure allowed terminal commands.\",rightElement:p(lo,{onClick:()=>{re(\"command\")},children:\"Open\"})}",
-      "{label:\"终端命令\",badge:P>0?P:void 0,description:\"配置允许的终端命令。\",rightElement:p(lo,{onClick:()=>{re(\"command\")},children:\"打开\"})}"
+      "{label:\"终端命令\",badge:P>0?P:void 0,description:\"配置允许执行的终端命令。\",rightElement:p(lo,{onClick:()=>{re(\"command\")},children:\"Open\"})}"
     ],
     [
       "{label:\"Commands Outside Sandbox\",badge:W>0?W:void 0,description:\"Configure allowed commands outside the sandbox.\",rightElement:p(lo,{onClick:()=>{re(\"unsandboxed\")},children:\"Open\"})}",
-      "{label:\"沙盒外命令\",badge:W>0?W:void 0,description:\"配置沙盒外允许的命令。\",rightElement:p(lo,{onClick:()=>{re(\"unsandboxed\")},children:\"打开\"})}"
+      "{label:\"沙盒外命令\",badge:W>0?W:void 0,description:\"配置允许在沙盒外运行的命令。\",rightElement:p(lo,{onClick:()=>{re(\"unsandboxed\")},children:\"Open\"})}"
     ],
     [
       "{label:\"Security Preset\",description:De,value:Se===\"custom\"?\"Custom\":One[ge][Se]?.displayName??\"Custom\",options:[...ie.presets,\"custom\"],displayResolver:it=>it===\"custom\"?\"Custom\":One[ge][it]?.displayName??\"Custom\",resolveOptionToDescription:it=>it===\"custom\"?\"Manually customize individual settings.\":One[ge][it]?.shortDescription,onSelect:it=>{Ye(it),Ue(it)},wide:!0}",
@@ -1038,15 +1038,15 @@
     ],
     [
       "{settingKey:Mr.DISABLE_EAGER_CLONING,label:\"Disable Eager Cloning\",description:\"Disable pre-warming of workspace clones.\"}",
-      "{settingKey:Mr.DISABLE_EAGER_CLONING,label:\"禁用预先克隆\",description:\"禁用工作区克隆的预热。\"}"
+      "{settingKey:Mr.DISABLE_EAGER_CLONING,label:\"禁用预克隆 (Eager Cloning)\",description:\"禁用工作区克隆的预热功能。\"}"
     ],
     [
       "{settingKey:Mr.MAX_CLONED_WORKSPACES,label:\"Maximum Active Workspaces\",description:\"Maximum number of concurrent active source workspaces tracked in the clone pools.\",type:\"number\",min:1}",
-      "{settingKey:Mr.MAX_CLONED_WORKSPACES,label:\"最大活动工作区数\",description:\"在克隆池中追踪的最大并发活动源工作区数。\",type:\"number\",min:1}"
+      "{settingKey:Mr.MAX_CLONED_WORKSPACES,label:\"最大活动工作区数\",description:\"克隆池中并发跟踪的最大活动源工作区数量。\",type:\"number\",min:1}"
     ],
     [
       "{settingKey:Mr.MAX_CLONES_PER_WORKSPACE,label:\"Maximum Clones Per Workspace\",description:\"Maximum number of pre-warmed workspace clones cached per active source workspace.\",type:\"number\",min:1,max:8}",
-      "{settingKey:Mr.MAX_CLONES_PER_WORKSPACE,label:\"每个工作区的最大克隆数\",description:\"每个活动源工作区缓存的最大预热工作区克隆数。\",type:\"number\",min:1,max:8}"
+      "{settingKey:Mr.MAX_CLONES_PER_WORKSPACE,label:\"每个工作区的最大克隆数\",description:\"每个活动源工作区缓存 of 预热工作区克隆的最大数量。\",type:\"number\",min:1,max:8}"
     ],
     [
       "{action:\"execute_url\",label:\"Execute URLs\",description:\"Allow/deny agent browser actuation access to specific URLs.\",grants:r,onChangeGrants:f=>{t.setPrefValue(Mr.PERMISSION_GRANTS_GLOBAL,f)},placeholder:\"e.g., https://example.com\",borderless:!0}",
@@ -1058,23 +1058,23 @@
     ],
     [
       "{value:\"run_command\",label:\"run_command\",description:\"Hook will only trigger if the tool name matches run_command.\"}",
-      "{value:\"run_command\",label:\"run_command\",description:\"仅当工具名称匹配 run_command 时才会触发钩子。\"}"
+      "{value:\"运行命令 (run_command)\",label:\"运行命令 (run_command)\",description:\"Hook will only trigger if the tool name matches 运行命令 (run_command).\"}"
     ],
     [
       "{value:\"run_command|view_file\",label:\"run_command or view_file\",description:\"Hook will only trigger if the tool name matches run_command or view_file.\"}",
-      "{value:\"run_command|view_file\",label:\"run_command 或 view_file\",description:\"仅当工具名称匹配 run_command 或 view_file 时才会触发钩子。\"}"
+      "{value:\"run_command|view_file\",label:\"运行命令 或 查看文件\",description:\"Hook will only trigger if the tool name matches 运行命令 或 查看文件.\"}"
     ],
     [
       "{value:\"browser_.*\",label:\"Browser tools (browser_.*)\",description:\"Hook will only trigger if the tool name starts with browser_.\"}",
-      "{value:\"browser_.*\",label:\"浏览器工具 (browser_.*)\",description:\"仅当工具名称以 browser_ 开头时才会触发钩子。\"}"
+      "{value:\"browser_.*\",label:\"浏览器工具 (browser_.*)\",description:\"仅在工具名称以 browser_ 开头时触发钩子。\"}"
     ],
     [
       "{settingKey:Mr.INCLUDE_JETSKI_DEFAULT_CUSTOMIZATIONS,label:\"Include Jetski Default Customizations\",description:\"When enabled, the agent will include default customizations, including default skills.\"}",
-      "{settingKey:Mr.INCLUDE_JETSKI_DEFAULT_CUSTOMIZATIONS,label:\"包含 Jetski 默认自定义配置\",description:\"启用后，Agent 将包含默认的自定义配置，包括默认技能。\"}"
+      "{settingKey:Mr.INCLUDE_JETSKI_DEFAULT_CUSTOMIZATIONS,label:\"包含 Jetski 默认自定义\",description:\"启用后，Agent 将包含默认自定义设置，包括默认技能。\"}"
     ],
     [
       "{label:\"Manage Hooks\",description:\"Configure agent hooks\",rightElement:p(lo,{onClick:()=>{j(\"hooks\")},children:\"Customize\"})}",
-      "{label:\"管理钩子\",description:\"配置 Agent 钩子\",rightElement:p(lo,{onClick:()=>{j(\"hooks\")},children:\"自定义\"})}"
+      "{label:\"管理钩子 (Hooks)\",description:\"配置 Agent 钩子\",rightElement:p(lo,{onClick:()=>{j(\"hooks\")},children:\"自定义\"})}"
     ],
     [
       "{label:\"Skill Custom Paths\",description:F,currentList:ee,onDidChangeList:fe,placeholder:\"Enter directory path...\"}",
@@ -1082,27 +1082,27 @@
     ],
     [
       "{label:\"Create Documents\",description:\"Gives the agent permission to create and upload documents to google drive\",checked:g.canCreate,onCheckedChange:C}",
-      "{label:\"创建文档\",description:\"赋予 Agent 创建并上传文档到 Google 云端硬盘的权限\",checked:g.canCreate,onCheckedChange:C}"
+      "{label:\"创建文档\",description:\"授予 Agent 在 Google 云端硬盘中创建和上传文档的权限。\",checked:g.canCreate,onCheckedChange:C}"
     ],
     [
       "{label:\"Search\",description:\"Gives the agent permission to search through google drive. The agent will only see file titles, not file contents\",checked:g.canSearch,onCheckedChange:N}",
-      "{label:\"搜索\",description:\"赋予 Agent 在 Google 云端硬盘中进行搜索的权限。Agent 只能看到文件标题，无法看到文件内容\",checked:g.canSearch,onCheckedChange:N}"
+      "{label:\"搜索\",description:\"授予 Agent 搜索 Google 云端硬盘的权限。Agent 只能看到文件标题，看不到文件内容。\",checked:g.can搜索,onCheckedChange:N}"
     ],
     [
       "{label:\"Marketplace Item URL\",description:`Changes the base URL on each extension page. You must restart ${t.nameShort} to use the new marketplace after changing this value.`,configurationKey:\"antigravity.marketplaceGalleryItemURL\",placeholder:\"https://open-vsx.org/vscode/item\"}",
-      "{label:\"插件市场商品 URL\",description:\"更改每个扩展页面的基础 URL。更改此值后，您必须重启 ${t.nameShort} 才能使用新的插件市场。\",configurationKey:\"antigravity.marketplaceGalleryItemURL\",placeholder:\"https://open-vsx.org/vscode/item\"}"
+      "{label:\"插件市场项目 URL\",description:`更改每个扩展页面的基础 URL。更改此值后，您必须重启 ${t.nameShort} 才能使用新的插件市场。`,configurationKey:\"antigravity.marketplaceGalleryItemURL\",placeholder:\"https://open-vsx.org/vscode/item\"}"
     ],
     [
       "{label:\"Marketplace Gallery URL\",description:`Changes the base URL for marketplace search results. You must restart ${t.nameShort} to use the new marketplace after changing this value.`,configurationKey:\"antigravity.marketplaceExtensionGalleryServiceURL\",placeholder:\"https://open-vsx.org/vscode/gallery\"}",
-      "{label:\"插件市场搜索 URL\",description:\"更改插件市场搜索结果的基础 URL。更改此值后，您必须重启 ${t.nameShort} 才能使用新的插件市场。\",configurationKey:\"antigravity.marketplaceExtensionGalleryServiceURL\",placeholder:\"https://open-vsx.org/vscode/gallery\"}"
+      "{label:\"插件市场服务 URL\",description:`更改插件市场搜索结果的基础 URL。更改此值后，您必须重启 ${t.nameShort} 才能使用新的插件市场。`,configurationKey:\"antigravity.marketplaceExtensionGalleryServiceURL\",placeholder:\"https://open-vsx.org/vscode/gallery\"}"
     ],
     [
       "{action:\"read_file\",label:\"Read Files\",description:\"Paths the agent can read inside this workspace.\",grants:V,onChangeGrants:x,placeholder:\"Enter file or directory path...\",borderless:!0}",
-      "{action:\"read_file\",label:\"Read Files\",description:\"Agent 在此工作区内可读取的路径。\",grants:V,onChangeGrants:x,placeholder:\"输入文件或目录路径...\",borderless:!0}"
+      "{action:\"read_file\",label:\"读取文件\",description:\"Agent 在此工作区内可读取的路径。\",grants:V,onChangeGrants:x,placeholder:\"输入文件或目录路径...\",borderless:!0}"
     ],
     [
       "{action:\"write_file\",label:\"Write Files\",description:\"Paths the agent can modify inside this workspace.\",grants:V,onChangeGrants:x,placeholder:\"Enter file or directory path...\",borderless:!0}",
-      "{action:\"write_file\",label:\"Write Files\",description:\"Agent 在此工作区内可修改的路径。\",grants:V,onChangeGrants:x,placeholder:\"输入文件或目录路径...\",borderless:!0}"
+      "{action:\"write_file\",label:\"写入文件\",description:\"Agent 在此工作区内可修改的路径。\",grants:V,onChangeGrants:x,placeholder:\"Enter file or directory path...\",borderless:!0}"
     ],
     [
       "{action:\"unsandboxed\",label:\"Commands Outside Sandbox\",description:\"Commands the agent can run outside the sandbox in this workspace.\",grants:V,onChangeGrants:x,placeholder:\"e.g., curl\",borderless:!0}",
@@ -1110,11 +1110,11 @@
     ],
     [
       "{value:\"safe_merge\",label:\"Safe Merge\",description:\"Checks for pending changes before merging.\",enumValue:wte?.SAFE_MERGE??2}",
-      "{value:\"safe_merge\",label:\"安全合并\",description:\"合并前检查是否存在未决更改。\",enumValue:wte?.SAFE_MERGE??2}"
+      "{value:\"safe_merge\",label:\"安全合并 (Safe Merge)\",description:\"在合并前检查未决的更改。\",enumValue:wte?.SAFE_MERGE??2}"
     ],
     [
       "{value:\"overwrite\",label:\"Overwrite\",description:\"Overwrites changes in the target workspace.\",enumValue:wte?.OVERWRITE??1}",
-      "{value:\"overwrite\",label:\"覆盖\",description:\"覆盖目标工作区中的更改。\",enumValue:wte?.OVERWRITE??1}"
+      "{value:\"overwrite\",label:\"覆盖 (Overwrite)\",description:\"覆盖 (Overwrite)s changes in the target workspace.\",enumValue:wte?.OVERWRITE??1}"
     ],
     [
       "KB=({text:e,onClick:t,isActive:r,className:n})=>p(\"button\",{type:\"button\",\"data-testid\":`settings-nav-item-${e}`,className:Mt(\"flex items-center gap-1.5 group mx-2 px-2 py-1 rounded-lg cursor-pointer border-none text-left transition-all outline-none\",r?\"bg-sidebar-secondary\":\"hover:bg-sidebar-muted\",n),onClick:t,children:p(\"span\",{className:Mt(\"text-sm transition-colors select-none truncate flex-1\",r?\"text-foreground\":\"text-secondary-foreground group-hover:text-foreground\"),children:e})})",
@@ -1488,7 +1488,7 @@
     ],
     [
       "children:\"Read URL content?\"",
-      "children:\"Read URL content?\""
+      "children:\"读取 URL 内容？\""
     ],
     [
       "children:\"Sources\"",
@@ -2177,6 +2177,118 @@
     [
       "ui(e)?\"Run\":e===Mn.DONE?\"Ran\":t?\"Rejected\":e===Mn.CANCELED?\"Canceled\":e===Mn.ERROR?\"Errored\":\"Terminal\"",
       "ui(e)?\"运行\":e===Mn.DONE?\"已运行\":t?\"已拒绝\":e===Mn.CANCELED?\"已取消\":e===Mn.ERROR?\"出错了\":\"终端\""
+    ],
+    [
+      "children:\"Thinking...\"",
+      "children:\"思考中...\""
+    ],
+    [
+      "children:\"Tool Calls\"",
+      "children:\"工具调用\""
+    ],
+    [
+      "children:\"Tool Output\"",
+      "children:\"工具输出\""
+    ],
+    [
+      "children:\"Tool arguments\"",
+      "children:\"工具参数\""
+    ],
+    [
+      "children:\"Try Again\"",
+      "children:\"重试\""
+    ],
+    [
+      "children:\"User cancelled agent execution.\"",
+      "children:\"用户取消了 Agent 执行。\""
+    ],
+    [
+      "children:\"View Debug\"",
+      "children:\"查看调试\""
+    ],
+    [
+      "children:\"View Logs\"",
+      "children:\"查看日志\""
+    ],
+    [
+      "children:\"View could not be opened\"",
+      "children:\"无法打开视图\""
+    ],
+    [
+      "children:\"The conversation was compacted to fit within the context window.\"",
+      "children:\"对话已被压缩以适应上下文窗口。\""
+    ],
+    [
+      "text:\"The conversation was compacted while generating this response.\"",
+      "text:\"在生成此响应时，对话已被压缩。\""
+    ],
+    [
+      "children:\"The server cleared a prefix of the conversation as it grew too large.\"",
+      "children:\"由于对话过大，服务器已清除对话的前缀。\""
+    ],
+    [
+      "children:\"There was an unexpected issue setting up your account.\"",
+      "children:\"设置您的账户时发生意外错误。\""
+    ],
+    [
+      "children:\"To provide feedback\"",
+      "children:\"提供反馈\""
+    ],
+    [
+      "children:\"To use browser tools, you need to enable remote debugging:\"",
+      "children:\"要使用浏览器工具，您需要启用远程调试：\""
+    ],
+    [
+      "children:\"Why are you opting out?\"",
+      "children:\"您为什么要退出？\""
+    ],
+    [
+      "children:\"feedback guide\"",
+      "children:\"反馈指南\""
+    ],
+    [
+      "children:\"global (default)\"",
+      "children:\"全局 (默认)\""
+    ],
+    [
+      "children:\"on your cloudtop server\"",
+      "children:\"在您的 Cloudtop 服务器上\""
+    ],
+    [
+      "children:\"to navigate\"",
+      "children:\"进行导航\""
+    ],
+    [
+      "title:\"view full search results\"",
+      "title:\"查看完整搜索结果\""
+    ],
+    [
+      "children:\"all conversations\"",
+      "children:\"所有对话\""
+    ],
+    [
+      "children:\"Thank you! \\u2764\\uFE0F\"",
+      "children:\"谢谢您！\\u2764\\uFE0F\""
+    ],
+    [
+      "children:\"The associated worktree will also be deleted.\"",
+      "children:\"关联的工作树也将被删除。\""
+    ],
+    [
+      "children:\"cumulative total for the conversation up to this point\"",
+      "children:\"截止到此处的对话累计总量\""
+    ],
+    [
+      "children:\"official documentation\"",
+      "children:\"官方文档\""
+    ],
+    [
+      "children:\"Toggle Sidebar\"",
+      "children:\"切换侧边栏\""
+    ],
+    [
+      "label:\"Toggle Fullscreen\"",
+      "label:\"切换全屏\""
     ]
   ],
   "workbench": [

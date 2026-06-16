@@ -442,16 +442,16 @@ function activate(context) {
     updateBlockStatusBar = vscode.window.createStatusBarItem(
         vscode.StatusBarAlignment.Right, 100
     );
-    updateBlockStatusBar.command = 'antigravity-zh.toggleBlockUpdate';
+    updateBlockStatusBar.command = 'antigravity-zh-stlxx.toggleBlockUpdate';
     updateStatusBar(base);
     updateBlockStatusBar.show();
     context.subscriptions.push(updateBlockStatusBar);
 
     // ── 注册命令 ──
     context.subscriptions.push(
-        vscode.commands.registerCommand('antigravity-zh.applyPatch', () => applyAllPatches(false)),
-        vscode.commands.registerCommand('antigravity-zh.revertPatch', () => revertAllPatches()),
-        vscode.commands.registerCommand('antigravity-zh.toggleBlockUpdate', () => {
+        vscode.commands.registerCommand('antigravity-zh-stlxx.applyPatch', () => applyAllPatches(false)),
+        vscode.commands.registerCommand('antigravity-zh-stlxx.revertPatch', () => revertAllPatches()),
+        vscode.commands.registerCommand('antigravity-zh-stlxx.toggleBlockUpdate', () => {
             const b = getAppBase();
             if (!b) {
                 vscode.window.showErrorMessage('未找到 Antigravity 安装目录');
@@ -504,10 +504,10 @@ function activate(context) {
     // ── 监听配置变更 ──
     context.subscriptions.push(
         vscode.workspace.onDidChangeConfiguration(e => {
-            if (e.affectsConfiguration('antigravity-zh.blockAutoUpdate')) {
+            if (e.affectsConfiguration('antigravity-zh-stlxx.blockAutoUpdate')) {
                 const b = getAppBase();
                 if (!b) return;
-                const shouldBlock = vscode.workspace.getConfiguration('antigravity-zh').get('blockAutoUpdate', false);
+                const shouldBlock = vscode.workspace.getConfiguration('antigravity-zh-stlxx').get('blockAutoUpdate', false);
                 if (shouldBlock && !isAutoUpdateBlocked(b)) {
                     blockAutoUpdate(b);
                     updateStatusBar(b);

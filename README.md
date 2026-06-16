@@ -30,7 +30,7 @@
 | 模块 | 目标文件 | 翻译条目 |
 |------|----------|---------|
 | Settings | `out/jetskiAgent/main.js` | 320+ |
-| Chat | `out/main.js` | 220+ |
+| Chat | `out/main.js` | 250+ |
 | Workbench | `out/vs/workbench/workbench.desktop.main.js` | 210+ |
 
 ## 安装方式
