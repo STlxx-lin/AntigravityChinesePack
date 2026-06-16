@@ -70,7 +70,7 @@ function getWorkbenchReplacements() {
 // 补丁引擎
 // ═══════════════════════════════════════════════════════════════
 
-const PATCH_VERSION = 'v43';
+const PATCH_VERSION = 'v47';
 const PATCH_MARKER = `/* zh-hans-patched-${PATCH_VERSION} */`;
 
 function getPatchVersion(filepath) {

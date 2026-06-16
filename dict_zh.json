@@ -217,8 +217,8 @@
       "label:\"打开工作区\""
     ],
     [
-      "Iqr=(e=>(e.Account=\"Account\",e.Agent=\"Permissions\",e.Drive=\"Google Drive\",e.Appearance=\"Appearance\",e.Tab=\"Tab\",e.Editor=\"Editor\",e.Browser=\"Browser\",e.Notifications=\"Notifications\",e.ProvideFeedback=\"Provide Feedback\",e.Customization=\"Customizations\",e.Models=\"Models\",e.App=\"App\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"Project General\",e.ProjectFolders=\"Project Folders\",e.ProjectAgent=\"Project Agent\",e.Shortcuts=\"Shortcuts\",e))(Iqr||{})",
-      "Iqr=(e=>(e.Account=\"账户\",e.Agent=\"权限\",e.Drive=\"Google 云端硬盘\",e.Appearance=\"外观\",e.Tab=\"Tab 补全\",e.Editor=\"编辑器\",e.Browser=\"浏览器\",e.Notifications=\"通知\",e.ProvideFeedback=\"提供反馈\",e.Customization=\"自定义\",e.Models=\"模型\",e.App=\"应用\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"项目通用\",e.ProjectFolders=\"项目文件夹\",e.ProjectAgent=\"项目 Agent\",e.Shortcuts=\"快捷键\",e))(Iqr||{})"
+      "Vqr=(e=>(e.Account=\"Account\",e.Agent=\"Permissions\",e.Drive=\"Google Drive\",e.Appearance=\"Appearance\",e.Tab=\"Tab\",e.Editor=\"Editor\",e.Browser=\"Browser\",e.Notifications=\"Notifications\",e.ProvideFeedback=\"Provide Feedback\",e.Customization=\"Customizations\",e.Models=\"Models\",e.App=\"App\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"Project General\",e.ProjectFolders=\"Project Folders\",e.ProjectAgent=\"Project Agent\",e.Shortcuts=\"Shortcuts\",e))(Vqr||{})",
+      "Vqr=(e=>(e.Account=\"账户\",e.Agent=\"权限\",e.Drive=\"Google 云端硬盘\",e.Appearance=\"外观\",e.Tab=\"Tab 补全\",e.Editor=\"编辑器\",e.Browser=\"浏览器\",e.Notifications=\"通知\",e.ProvideFeedback=\"提供反馈\",e.Customization=\"自定义\",e.Models=\"模型\",e.App=\"应用\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"项目通用\",e.ProjectFolders=\"项目文件夹\",e.ProjectAgent=\"项目 Agent\",e.Shortcuts=\"快捷键\",e))(Vqr||{})"
     ],
     [
       "p(\"div\",{className:\"px-4\",children:p(\"span\",{className:\"text-xs font-medium text-muted-foreground select-none\",children:\"General\"})})",
@@ -429,8 +429,8 @@
       "case vh.DISABLED:return\"已禁用\";case vh.ALWAYS_ASK:return\"请求审查\";case vh.TURBO:return\"始终继续\";default:return\"请求审查\""
     ],
     [
-      "resolveOptionToString:t=>q1t.find(r=>r.value===t)?.label||\"Request Review\"",
-      "resolveOptionToString:t=>q1t.find(r=>r.value===t)?.label||\"请求审查\""
+      "resolveOptionToString:t=>$1t.find(r=>r.value===t)?.label||\"Request Review\"",
+      "resolveOptionToString:t=>$1t.find(r=>r.value===t)?.label||\"请求审查\""
     ],
     [
       "Warning: \"Always Proceed\" is enabled without sandbox protection. This is very dangerous and we do not recommend doing this.",
@@ -1279,6 +1279,14 @@
     [
       "children:\"To modify editor settings, open Settings within the editor window.\"",
       "children:\"要修改编辑器设置，请在编辑器窗口中打开设置。\""
+    ],
+    [
+      "children:`${y} ${y===1?\"file\":\"files\"} changed`",
+      "children:`${y} 个修改的文件`"
+    ],
+    [
+      "za(e)?\"Run\":e===On.DONE?\"Ran\":t?\"Rejected\":e===On.CANCELED?\"Canceled\":e===On.ERROR?\"Errored\":\"Terminal\"",
+      "za(e)?\"运行\":e===On.DONE?\"已运行\":t?\"已拒绝\":e===On.CANCELED?\"已取消\":e===On.ERROR?\"出错了\":\"终端\""
     ]
   ],
   "chat": [
@@ -1763,8 +1771,8 @@
       "label:\"重命名\""
     ],
     [
-      "uma=(e=>(e.Account=\"Account\",e.Agent=\"Permissions\",e.Drive=\"Google Drive\",e.Appearance=\"Appearance\",e.Tab=\"Tab\",e.Editor=\"Editor\",e.Browser=\"Browser\",e.Notifications=\"Notifications\",e.ProvideFeedback=\"Provide Feedback\",e.Customization=\"Customizations\",e.Models=\"Models\",e.App=\"App\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"Project General\",e.ProjectFolders=\"Project Folders\",e.ProjectAgent=\"Project Agent\",e.Shortcuts=\"Shortcuts\",e))(uma||{})",
-      "uma=(e=>(e.Account=\"账户\",e.Agent=\"权限\",e.Drive=\"Google 云端硬盘\",e.Appearance=\"外观\",e.Tab=\"Tab 补全\",e.Editor=\"编辑器\",e.Browser=\"浏览器\",e.Notifications=\"通知\",e.ProvideFeedback=\"提供反馈\",e.Customization=\"自定义\",e.Models=\"模型\",e.App=\"应用\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"项目通用\",e.ProjectFolders=\"项目文件夹\",e.ProjectAgent=\"项目 Agent\",e.Shortcuts=\"快捷键\",e))(uma||{})"
+      "lma=(e=>(e.Account=\"Account\",e.Agent=\"Permissions\",e.Drive=\"Google Drive\",e.Appearance=\"Appearance\",e.Tab=\"Tab\",e.Editor=\"Editor\",e.Browser=\"Browser\",e.Notifications=\"Notifications\",e.ProvideFeedback=\"Provide Feedback\",e.Customization=\"Customizations\",e.Models=\"Models\",e.App=\"App\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"Project General\",e.ProjectFolders=\"Project Folders\",e.ProjectAgent=\"Project Agent\",e.Shortcuts=\"Shortcuts\",e))(lma||{})",
+      "lma=(e=>(e.Account=\"账户\",e.Agent=\"权限\",e.Drive=\"Google 云端硬盘\",e.Appearance=\"外观\",e.Tab=\"Tab 补全\",e.Editor=\"编辑器\",e.Browser=\"浏览器\",e.Notifications=\"通知\",e.ProvideFeedback=\"提供反馈\",e.Customization=\"自定义\",e.Models=\"模型\",e.App=\"应用\",e.BestOfN=\"Best of N\",e.ProjectGeneral=\"项目通用\",e.ProjectFolders=\"项目文件夹\",e.ProjectAgent=\"项目 Agent\",e.Shortcuts=\"快捷键\",e))(lma||{})"
     ],
     [
       "{title:\"MCP Servers\",settings:[LG.MCP]}",
@@ -1783,8 +1791,8 @@
       "`控制终端命令在运行前是否需要您的批准。\n\n注意：对此设置的更改将仅适用于发送给 Agent 的新消息。进行中的响应将使用先前的设置值。`"
     ],
     [
-      "resolveOptionToString:t=>{switch(t){case n0.EAGER:return\"Always Proceed\";case n0.OFF:return\"Request Review\";default:return\"Proceed in Sandbox\"}}",
-      "resolveOptionToString:t=>{switch(t){case n0.EAGER:return\"始终继续\";case n0.OFF:return\"请求审查\";default:return\"在沙盒中运行\"}}"
+      "resolveOptionToString:t=>{switch(t){case a0.EAGER:return\"Always Proceed\";case a0.OFF:return\"Request Review\";default:return\"Proceed in Sandbox\"}}",
+      "resolveOptionToString:t=>{switch(t){case a0.EAGER:return\"始终继续\";case a0.OFF:return\"请求审查\";default:return\"在沙盒中运行\"}}"
     ],
     [
       "\"Agent never asks for confirmation before executing terminal commands (except those in the Deny list). This provides the Agent with the maximum ability to operate over long periods without intervention, but also has the highest risk of an Agent executing an unsafe terminal command.\"",
@@ -2123,7 +2131,7 @@
       "children:\"正在加载日志...\""
     ],
     [
-      "`${s.length} File${s.length===1?\"\":\"s\"} With Changes`" ,
+      "`${s.length} File${s.length===1?\"\":\"s\"} With Changes`",
       "`${s.length} 个修改的文件`"
     ],
     [
@@ -2141,6 +2149,34 @@
     [
       "i.terminatedEarly?\"Stopped after\":\"Worked for\"",
       "i.terminatedEarly?\"超时停止\":\"运行了\""
+    ],
+    [
+      "children:`${R} ${R===1?\"file\":\"files\"} changed`",
+      "children:`${R} 个修改的文件`"
+    ],
+    [
+      "children:\"MCP Error\"",
+      "children:\"MCP 错误\""
+    ],
+    [
+      "title:r=\"Add Context\"",
+      "title:r=\"添加上下文\""
+    ],
+    [
+      "children:\"Add Context\"",
+      "children:\"添加上下文\""
+    ],
+    [
+      "children:[v(\"span\",{children:\"Select Model\"}),",
+      "children:[v(\"span\",{children:\"选择模型\"}),"
+    ],
+    [
+      "label:\"Actions\"",
+      "label:\"操作\""
+    ],
+    [
+      "ui(e)?\"Run\":e===Mn.DONE?\"Ran\":t?\"Rejected\":e===Mn.CANCELED?\"Canceled\":e===Mn.ERROR?\"Errored\":\"Terminal\"",
+      "ui(e)?\"运行\":e===Mn.DONE?\"已运行\":t?\"已拒绝\":e===Mn.CANCELED?\"已取消\":e===Mn.ERROR?\"出错了\":\"终端\""
     ]
   ],
   "workbench": [
@@ -2871,6 +2907,126 @@
     [
       "S.terminatedEarly?\"Stopped after\":\"Worked for\"",
       "S.terminatedEarly?\"超时停止\":\"运行了\""
+    ],
+    [
+      "children:`${g} ${g===1?\"file\":\"files\"} changed`",
+      "children:`${g} 个修改的文件`"
+    ],
+    [
+      "prefix:\"Analyzed\"",
+      "prefix:\"已分析\""
+    ],
+    [
+      "prefix:ll(t)?\"Analyzing content\":\"Analyzed content\"",
+      "prefix:ll(t)?\"正在分析内容\":\"已分析内容\""
+    ],
+    [
+      "f?\"Analyzing Task Log\":\"Analyzed Task Log\"",
+      "f?\"正在分析任务日志\":\"已分析任务日志\""
+    ],
+    [
+      "f?\"Analyzing\":\"Analyzed\"",
+      "f?\"正在分析\":\"已分析\""
+    ],
+    [
+      "h?\"Analyzing\":\"Analyzed\"",
+      "h?\"正在分析\":\"已分析\""
+    ],
+    [
+      "d?\"Analyzing\":\"Analyzed\"",
+      "d?\"正在分析\":\"已分析\""
+    ],
+    [
+      "ll(t)?\"Editing\":o?\"Failed to edit\":\"Edited\"",
+      "ll(t)?\"正在编辑\":o?\"编辑失败\":\"已编辑\""
+    ],
+    [
+      "case\"command\":case\"sed\":return i?\"Editing\":n?\"Canceled edit to\":\"Edited\"",
+      "case\"command\":case\"sed\":return i?\"正在编辑\":n?\"已取消编辑\":\"已编辑\""
+    ],
+    [
+      "case\"createFile\":return t.spec.value?.overwrite?i?\"Editing\":n?\"Canceled edit to\":\"Edited\":i?\"Creating\":n?\"Canceled creation of\":\"Created\"",
+      "case\"createFile\":return t.spec.value?.overwrite?i?\"正在编辑\":n?\"已取消编辑\":\"已编辑\":i?\"正在创建\":n?\"已取消创建\":\"已创建\""
+    ],
+    [
+      "case\"command\":case\"sed\":return`Edited ${n}`",
+      "case\"command\":case\"sed\":return`已编辑 ${n}`"
+    ],
+    [
+      "A=E?\"Editing\":S?\"Canceled edit to\":\"Edited\"",
+      "A=E?\"正在编辑\":S?\"已取消编辑\":\"已编辑\""
+    ],
+    [
+      "\"Ask anything, @ to mention\"",
+      "\"问任何问题，输入 @ 提及\""
+    ],
+    [
+      "\", / for actions\"",
+      "\"，输入 / 执行操作\""
+    ],
+    [
+      "children:\"MCP Error\"",
+      "children:\"MCP 错误\""
+    ],
+    [
+      "title:i=\"Add Context\"",
+      "title:i=\"添加上下文\""
+    ],
+    [
+      "children:\"Add Context\"",
+      "children:\"添加上下文\""
+    ],
+    [
+      "title:\"Add Context to Agent\"",
+      "title:\"向 Agent 添加上下文\""
+    ],
+    [
+      "children:[R(\"span\",{children:\"Select Model\"}),",
+      "children:[R(\"span\",{children:\"选择模型\"}),"
+    ],
+    [
+      "title:\"Select Model to Send Message\"",
+      "title:\"选择模型以发送消息\""
+    ],
+    [
+      "message:\"Select a model using the model selector in the input box\"",
+      "message:\"请使用输入框中的模型选择器来选择模型\""
+    ],
+    [
+      "label:\"Select Model\"",
+      "label:\"选择模型\""
+    ],
+    [
+      "children:\"Select Model:\"",
+      "children:\"选择模型:\""
+    ],
+    [
+      "label:\"Media\"",
+      "label:\"媒体\""
+    ],
+    [
+      "label:\"Mentions\"",
+      "label:\"提及\""
+    ],
+    [
+      "label:\"Actions\"",
+      "label:\"操作\""
+    ],
+    [
+      "children:\"AI may make mistakes. Double-check all generated code.\"",
+      "children:\"AI 可能会犯错。请仔细核对所有生成的代码。\""
+    ],
+    [
+      "ll(t)?\"Run\":t===$s.DONE?\"Ran\":e?\"Rejected\":t===$s.CANCELED?\"Canceled\":t===$s.ERROR?\"Errored\":\"Terminal\"",
+      "ll(t)?\"运行\":t===$s.DONE?\"已运行\":e?\"已拒绝\":t===$s.CANCELED?\"已取消\":t===$s.ERROR?\"出错了\":\"终端\""
+    ],
+    [
+      "A=E?\"Creating\":S?\"Canceled creation of\":\"Created\"",
+      "A=E?\"正在创建\":S?\"已取消创建\":\"已创建\""
+    ],
+    [
+      "A=E?\"Deleting\":S?\"Canceled deletion of\":\"Deleted\"",
+      "A=E?\"正在删除\":S?\"已取消删除\":\"已删除\""
     ]
   ]
 }
