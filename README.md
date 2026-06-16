@@ -1,6 +1,6 @@
-# Chinese (Simplified) Language Pack for Antigravity
+# Chinese (Simplified) Language Pack for Antigravity-stlxx
 
-简体中文语言包，专为 **Antigravity IDE** 的专属功能提供中文翻译。
+简体中文语言包，专为 **Antigravity IDE** 的专属功能提供中文翻译（由 STlxx-lin 维护的分支版本）。
 
 > ⚠️ 本语言包仅覆盖 Antigravity 独有的 UI 元素。VS Code 基础 UI 的中文翻译请配合安装微软官方的 [Chinese (Simplified) Language Pack](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)。
 
@@ -17,26 +17,27 @@
 
 | 扩展 | 说明 | 翻译条目 |
 |------|------|---------| 
-| Antigravity 核心 | AI 功能、登录、导入设置等 | 25+ |
-| Browser Launcher | 内置浏览器 | 3 |
-| Code Executor | 代码执行器 | 1 |
-| Dev Containers | 开发容器 | 8 |
-| Remote - SSH | 远程 SSH 连接 | 19 |
+| Antigravity 核心 | AI 功能、登录、导入设置等 | 25 |
+| Browser Launcher | 内置浏览器 | 4 |
+| Code Executor | 代码执行器 | 2 |
+| Dev Containers | 开发容器 | 9 |
+| Remote - SSH | 远程 SSH 连接 | 20 |
 | Remote - WSL | WSL 连接 | 17 |
+| VS Code 基础覆盖 | 常见操作与按钮（反馈、更新日志等） | 7 |
 
 ### 硬编码补丁
 
 | 模块 | 目标文件 | 翻译条目 |
 |------|----------|---------|
-| Settings | `out/jetskiAgent/main.js` | 150+ |
-| Chat | `extensions/antigravity/out/media/chat.js` | 800+ |
-| Workbench | `out/vs/workbench/workbench.desktop.main.js` | 120+ |
+| Settings | `out/jetskiAgent/main.js` | 320+ |
+| Chat | `out/main.js` | 220+ |
+| Workbench | `out/vs/workbench/workbench.desktop.main.js` | 210+ |
 
 ## 安装方式
 
 ### 方式一：从 Release 下载
 
-1. 前往 [Releases](https://github.com/editorss/AntigravityChinesePack/releases) 下载最新 `.vsix` 文件
+1. 前往 [Releases](https://github.com/STlxx-lin/AntigravityChinesePack/releases) 下载最新 `.vsix` 文件
 2. 在 Antigravity 中打开命令面板 (`Cmd+Shift+P`)
 3. 搜索 **"Extensions: Install from VSIX..."**
 4. 选择下载的 `.vsix` 文件
@@ -45,7 +46,7 @@
 ### 方式二：从源码打包
 
 ```bash
-git clone https://github.com/editorss/AntigravityChinesePack.git
+git clone https://github.com/STlxx-lin/AntigravityChinesePack.git
 cd AntigravityChinesePack
 npx -y @vscode/vsce package --no-dependencies
 # 安装生成的 .vsix 文件
